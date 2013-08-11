@@ -164,7 +164,7 @@ body {
 h1, .h1 {
   font-size: 3rem;
   line-height: 1.25; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 512px) {
     h1, .h1 {
       font-size: 4rem; } }
 
@@ -172,16 +172,20 @@ h2, .h2 {
   font-size: 2rem;
   line-height: 1.25; }
 
+@media screen and (max-width: 511px) {
+  .h2-small {
+    font-size: 1.5rem; } }
+
 h3, .h3, h4, h5, h6 {
   font-size: 1.5rem; }
 
 p, ul, ol, .p {
-  font-size: 1.25rem; }
+  font-size: 1.125rem; }
 
 small, .small {
   font-size: .875rem;
   -webkit-text-size-adjust: 100%; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 512px) {
     small, .small {
       font-size: 1rem; } }
 
@@ -246,7 +250,7 @@ strong, .bold {
 .ml1 {
   margin-left: 1rem; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 512px) {
   .m1-res {
     margin: 2rem; }
 
@@ -276,7 +280,7 @@ strong, .bold {
 .ml2 {
   margin-left: 2rem; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 512px) {
   .m2-res {
     margin: 4rem; }
 
@@ -323,7 +327,7 @@ strong, .bold {
 .pl1 {
   padding-left: 1rem; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 512px) {
   .p1-res {
     padding: 2rem; }
 
@@ -353,7 +357,7 @@ strong, .bold {
 .pl2 {
   padding-left: 2rem; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 512px) {
   .p2-res {
     padding: 4rem; }
 
@@ -371,11 +375,10 @@ strong, .bold {
 .tappad {
   line-height: 3rem;
   margin-right: 1rem; }
-  @media screen and (max-width: 639px) {
+  @media screen and (max-width: 511px) {
     .tappad {
       margin-right: 0;
       display: block;
-      padding: 0 1rem;
       border-bottom-style: solid;
       border-bottom-width: 1px; }
       .tappad:first-child {
@@ -385,7 +388,7 @@ strong, .bold {
 .tappad-s {
   padding: 0 1rem;
   line-height: 3rem; }
-  @media screen and (max-width: 639px) {
+  @media screen and (max-width: 511px) {
     .tappad-s {
       display: block; } }
 
@@ -630,7 +633,7 @@ strong, .bold {
 .wi33 {
   width: 33.33333%; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 512px) {
   .wi100-m {
     width: 100%; }
 
@@ -654,13 +657,13 @@ strong, .bold {
 .grid-1 {
   float: left;
   width: 100%; }
-  @media screen and (min-width: 640px) and (max-width: 1023px) {
+  @media screen and (min-width: 512px) and (max-width: 895px) {
     .grid-1 {
       width: 45%; }
       .grid-1:nth-child(2n+1) {
         margin-right: 10%;
         clear: left; } }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 896px) {
     .grid-1 {
       width: 30%; }
       .grid-1:nth-child(3n+1), .grid-1:nth-child(3n+2) {
@@ -674,7 +677,7 @@ strong, .bold {
   .grid-2:nth-child(2n+1) {
     margin-right: 10%;
     clear: left; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 896px) {
     .grid-2 {
       width: 22%; }
       .grid-2:nth-child(4n+1), .grid-2:nth-child(4n+2), .grid-2:nth-child(4n+3) {
@@ -707,7 +710,7 @@ strong, .bold {
   .media .bd {
     overflow: hidden; }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 511px) {
   .media-fold-s .img {
     float: none; } }
 

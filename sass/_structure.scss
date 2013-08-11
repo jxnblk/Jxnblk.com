@@ -85,7 +85,7 @@
   @include break(small) {
     margin-right: 0;
     display: block;
-    padding: 0 1rem;
+    //padding: 0 1rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     &:first-child {

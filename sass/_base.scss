@@ -45,15 +45,15 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
 
 @mixin break($point) {
   @if $point == small {
-    @media screen and (max-width: 639px) { @content; }
+    @media screen and (max-width: 511px) { @content; }
   }
   @else if $point == medium-only {
-    @media screen and (min-width: 640px) and (max-width: 1023px) { @content; }
+    @media screen and (min-width: 512px) and (max-width: 895px) { @content; }
   }
   @else if $point == medium {
-    @media screen and (min-width: 640px) { @content; }
+    @media screen and (min-width: 512px) { @content; }
   }
   @else if $point == large {
-    @media screen and (min-width: 1024px)  { @content; }
+    @media screen and (min-width: 896px)  { @content; }
   }
 }
