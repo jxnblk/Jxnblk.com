@@ -85,7 +85,7 @@
   @include break(small) {
     margin-right: 0;
     display: block;
-    padding: 0 1rem;
+    //padding: 0 1rem;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     &:first-child {
@@ -244,10 +244,7 @@
 }
 
 
-// Grid Columns
-// 30 . 5 . 30 . 5 . 30
-
-.grid {
+.grid-1 {
   float: left;
   width: 100%;
   @include break(medium-only) {
@@ -257,10 +254,21 @@
   @include break(large) {
     width: 30%;
     &:nth-child(3n+1), &:nth-child(3n+2) { margin-right: 5%; }
-    &:nth-child(3n+1) { clear: left; }
+    &:nth-child(3n+1) { float: left; }
   }
 }
 
-
-
-
+.grid-2 {
+  float: left;
+  // width: 100%;
+  width: 45%;
+  &:nth-child(2n+1){ margin-right: 10%; clear: left; }
+  @include break(medium-only) {
+    
+  }
+  @include break(large) {
+    width: 22%;
+    &:nth-child(4n+1), &:nth-child(4n+2), &:nth-child(4n+3) { margin-right: 4%; }
+    &:nth-child(4n+1) { clear: left; }
+  }
+}
