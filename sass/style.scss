@@ -9,5 +9,19 @@
 // }
 
 .tiles {
-
+  $gutter: 5%;
+  .tile {
+    display: block;
+    margin-bottom: $gutter;
+  }
+  @media (min-width: 512px){
+    font-size: 0;
+    margin-right: -$gutter;
+    .tile {
+      font-size: 1rem;
+      display: inline-block;
+      margin-right: $gutter;
+      width: percentage(1/2) - $gutter;
+    }
+  }
 }
