@@ -37,7 +37,7 @@
 // Default font stack
 // $font-primary: 'Helvetica Neue', Helvetica, sans-serif;
 // Base spacing unit
-// $space: 1rem;
+$space: 2.5%;
 
 
 
@@ -93,7 +93,7 @@ small, .small {
 // Apply the .responsive class directly to elements or their parents
 .responsive {
   @media (min-width: 768px) {
-    .h1, &.h1 { font-size: 4rem; }
+    .h1, &.h1 { font-size: 5rem; }
     .h2, &.h2 { font-size: 2rem; }
     .p, &.p { font-size: 1.25rem; }
     .small, &.small { font-size: 1rem; }

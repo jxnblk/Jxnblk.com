@@ -5,78 +5,26 @@
 
 */
 
-$dkgry: #666;
-$mdgry: #aaa;
-$ltgry: #eee;
-$link:  #0bf;
-
+$gray: #555;
+$link:  #0096cc;
 
 body {
-  color: $dkgry;
+  color: $gray;
   background-color: #fff;
-  //font-family: "skolar", Georgia, serif;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-
 a {
-  color: $link;
+  color: $gray;
   text-decoration: none;
   &:hover {
-    color: darken($link, 10%);
+    color: $link;
   }
 }
 
-.dkgry { color: $dkgry; }
-.mdgry { color: $mdgry; }
-.ltgry { color: $ltgry; }
-.wht {   color: #fff; }
+.gray { color: $gray; }
 .link {  color: $link; }
-
-.bg-dkgry { background-color: $dkgry; }
-.bg-mdgry { background-color: $mdgry; }
-.bg-ltgry { background-color: $ltgry; }
-.bg-link {  background-color: $link; }
-
-
-.bor   { border:        1px solid; }
-.borto { border-top:    1px solid; }
-.borri { border-right:  1px solid; }
-.borbo { border-bottom: 1px solid; }
-.borle { border-left:   1px solid; }
-
-.bor-dkgry { border-color: $dkgry; }
-.bor-mdgry { border-color: $mdgry; }
-.bor-ltgry { border-color: $ltgry; }
-.bor-wht {   border-color: #fff; }
-
-
-.rc {   border-radius: .25rem; }
-.circ { border-radius: 50%; }
-
-
-.btn-link {
-  color: #fff;
-  background-color: $link;
-  border-radius: .25rem;
-  border: none;
-  &:hover {
-    color: #fff;
-    background-color: lighten($link, 5%);
-  }
-  &:active {
-    box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
-  }
-}
-
-.input:focus {
-  outline: none;
-  border-color: $link;
-}
-
-.bg-jxn {
-  background-image: url(images/Jackson-q60.jpg);
-}
+.bg-gray { background-color: $gray; }
 
 .bg-center {
   background-position: center;
@@ -85,7 +33,3 @@ a {
 .bg-cover {
   background-size: cover;
 }
-
-
-
-
