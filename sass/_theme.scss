@@ -11,7 +11,8 @@ $link:  #0096cc;
 body {
   color: $gray;
   background-color: #fff;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  // font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "freight-sans-pro",sans-serif;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
   }
 }
 
+.white { color: #fff; }
 .gray { color: $gray; }
 .link {  color: $link; }
 .bg-gray { background-color: $gray; }
