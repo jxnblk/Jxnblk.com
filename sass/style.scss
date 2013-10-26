@@ -9,10 +9,10 @@
 // }
 
 .tiles {
-  $gutter: 2.5%;
+  $gutter: 4%;
   .tile {
     display: block;
-    margin-bottom: 2*$gutter;
+    margin-bottom: $gutter;
   }
   @media (min-width: 512px){
     font-size: 0;
