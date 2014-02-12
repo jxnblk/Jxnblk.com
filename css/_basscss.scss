@@ -25,7 +25,7 @@ article, aside, footer, header, main, nav, section { display: block; }
 // Typography
 
 // Default Font Stack
-$font-primary: Avenir, 'Avenir Next', 'Helvetica Neue', Helvetica, sans-serif;
+$font-primary: 'Helvetica Neue', Helvetica, sans-serif;
 
 // Base spacing unit
 $space: 1rem !default;
@@ -75,7 +75,7 @@ small, .small {
 // Utilities
 strong, .bold { font-weight: 600; }
 .regular { font-weight: normal; }
-.caps { text-transform: uppercase; letter-spacing: .2em; }
+//.caps { text-transform: uppercase; letter-spacing: .2em; }
 //.center { text-align: center; }
 //.right-align  { text-align: right; }
 

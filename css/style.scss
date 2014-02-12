@@ -11,32 +11,29 @@ html, body { height: 100%; }
   .mobile-block { display: block; }  
 }
 
-.tiles {
-  $gutter: 4%;
-  .tile {
-    display: block;
-    margin-bottom: $gutter;
-  }
-  @media (min-width: 512px){
+$gutter: 4%;
+.tile {
+  display: block;
+  margin-bottom: $space;
+}
+@media (min-width: 512px){
+  .tiles {
     font-size: 0;
     margin-right: -$gutter;
-    .tile {
-      font-size: 1rem;
-      display: inline-block;
-      vertical-align: top;
-      margin-right: $gutter;
-      width: percentage(1/2) - $gutter;
-    }
   }
-  @media (min-width: 768px) {
-    .tile {
-      width: percentage(1/3) - $gutter;
-    }
+  .tile {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: $gutter;
+    margin-bottom: 1.5 * $space;
+    width: percentage(1/2) - $gutter;
   }
-  @media (min-width: 1280px) {
-    .tile {
-      width: percentage(1/4) - $gutter;
-    }
-  }
+}
+@media (min-width: 768px) {
+  .tile { width: percentage(1/3) - $gutter; }
+}
+@media (min-width: 1280px) {
+  .tile { width: percentage(1/4) - $gutter; }
 }
 
