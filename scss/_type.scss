@@ -6,6 +6,9 @@ body {
   font-weight: 400;
 }
 
+h1,h2,h3,h4,h5,h6,strong, .bold {
+  font-weight: 600;
+}
 
 // Base Type Scale
 
@@ -62,7 +65,7 @@ small, .small, .f5 {
 
 // Utilities
 
-strong, .bold { font-weight: bold; }
+//strong, .bold { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
