@@ -6,7 +6,7 @@ body {
   font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6,strong, .bold {
+h1, h2, h3, h4, h5, h6, strong, .bold {
   font-weight: 600;
 }
 
@@ -27,45 +27,26 @@ h3, .h3, .f3 {
   line-height: 1.5rem;
 }
 
-p, .p, .f4, h4, h5, h6, dl, ol, ul {
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-}
-
-small, .small, .f5 {
-  font-size: .875rem;
-  line-height: 1.5rem;
-}
+h4, .h4, .f4, p, dl, ol, ul { font-size: 1.125rem; line-height: 1.5rem; }
+h5, .h5, .f5, h6, small { font-size: .875rem; line-height: 1.5rem; }
 
 
 // Responsive Type Scale
 
 @media screen and (min-width: 48em) {
-  .h1 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-  .h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-  .h3 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  //.p {
-  //  font-size: 1.25rem;
-  //  line-height: 2rem;
-  //}
-  .small {
-    font-size: 1rem;
-  }
+  h1, .h1 { font-size: 3rem; line-height: 4rem; }
+  h2, .h2 { font-size: 2rem; line-height: 2.5rem; }
+  h3, .h3 { font-size: 1.5rem; line-height: 2rem; }
+  h4, .h4, p, dl, ol, ul { font-size: 1.25rem; line-height: 2rem; }
+  .h5 { font-size: 1rem; line-height: 1.5rem; }
 }
 
 
-// Utilities
+// SVG Icons
+.icon { width: 1em; height: 1em; vertical-align: -.125em; }
 
-//strong, .bold { font-weight: bold; }
+
+// Utilities
 .regular { font-weight: normal; }
 .italic { font-style: italic; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
@@ -75,7 +56,6 @@ small, .small, .f5 {
 
 // Typographical Measure
 // Use with the .wrap class to center container
-
 .measure { max-width: 48rem; }
 .measure-narrow { max-width: 32rem; }
 .measure-wide { max-width: 60rem; }
