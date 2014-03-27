@@ -2,10 +2,10 @@
 
 $max-width: 75rem;
 // Matches .px2
-$gutter: 4rem;
+$gutter: 2rem;
 
 // Matches .px1
-$gutter: 2rem;
+//$gutter: 2rem;
 
 $bp1: 40em;
 //$bp2: 64em;
@@ -60,12 +60,12 @@ $bp1: 40em;
       width: percentage($i/12);
     }
   }
+  .measure {
+    width: percentage(8/12);
+    max-width: (8/12) * $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
-.measure {
-  width: percentage(8/12);
-  max-width: (8/12) * $max-width;
-  margin-right: auto;
-  margin-left: auto;
-}
 

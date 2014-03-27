@@ -451,13 +451,13 @@ h5, .h5, .f5, h6, small {
     width: 83.33333%; }
 
   .grid-11 {
-    width: 91.66667%; } }
-.measure {
-  width: 66.66667%;
-  max-width: 50rem;
-  margin-right: auto;
-  margin-left: auto; }
+    width: 91.66667%; }
 
+  .measure {
+    width: 66.66667%;
+    max-width: 50rem;
+    margin-right: auto;
+    margin-left: auto; } }
 .button {
   font-family: inherit;
   font-weight: bold;
