@@ -32,6 +32,9 @@ body {
   line-height: 1.5rem;
   font-weight: 400; }
 
+.serif {
+  font-family: 'Merriweather', serif; }
+
 h1, h2, h3, h4, h5, h6, strong, .bold {
   font-weight: 600; }
 
@@ -95,15 +98,6 @@ h5, .h5, .f5, h6, small {
 
 .right-align {
   text-align: right; }
-
-.measure {
-  max-width: 48rem; }
-
-.measure-narrow {
-  max-width: 32rem; }
-
-.measure-wide {
-  max-width: 60rem; }
 
 .leading-1 {
   line-height: 1.5rem; }
@@ -359,73 +353,111 @@ h5, .h5, .f5, h6, small {
   .mobile-center {
     text-align: center; } }
 .container {
-  max-width: 64rem;
+  max-width: 75rem;
   margin-right: auto;
   margin-left: auto; }
 
+.grid,
+.mobile-grid,
+.measure,
+.table-cell {
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.mobile-grid {
+  float: left; }
+
+.mobile-grid-1 {
+  width: 8.33333%; }
+
+.mobile-grid-2 {
+  width: 16.66667%; }
+
+.mobile-grid-3 {
+  width: 25%; }
+
+.mobile-grid-4 {
+  width: 33.33333%; }
+
+.mobile-grid-5 {
+  width: 41.66667%; }
+
+.mobile-grid-6 {
+  width: 50%; }
+
+.mobile-grid-7 {
+  width: 58.33333%; }
+
+.mobile-grid-8 {
+  width: 66.66667%; }
+
+.mobile-grid-9 {
+  width: 75%; }
+
+.mobile-grid-10 {
+  width: 83.33333%; }
+
+.mobile-grid-11 {
+  width: 91.66667%; }
+
+.px0 {
+  padding-right: 0;
+  padding-left: 0; }
+
 @media screen and (min-width: 40em) {
-  .grid, .mobile-grid {
-    float: left;
-    margin-left: 3%; }
-    .grid:first-child, .mobile-grid:first-child {
-      margin-left: 0; }
+  .table {
+    display: table;
+    width: 100%; }
 
-  .grid-1, .mobile-grid-1 {
-    width: 5.58333%; }
+  .table-fixed {
+    table-layout: fixed; }
 
-  .grid-2, .mobile-grid-2 {
-    width: 14.16667%; }
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle; }
 
-  .grid-3, .mobile-grid-3 {
-    width: 22.75%; }
+  .grid {
+    float: left; }
 
-  .grid-4, .mobile-grid-4 {
-    width: 31.33333%; }
+  .grid-1 {
+    width: 8.33333%; }
 
-  .centered-grid-4 {
-    width: 31.33333%;
-    max-width: 20.05333rem;
-    margin-right: auto;
-    margin-left: auto; }
+  .grid-2 {
+    width: 16.66667%; }
 
-  .grid-5, .mobile-grid-5 {
-    width: 39.91667%; }
+  .grid-3 {
+    width: 25%; }
 
-  .grid-6, .mobile-grid-6 {
-    width: 48.5%; }
+  .grid-4 {
+    width: 33.33333%; }
 
-  .centered-grid-6 {
-    width: 48.5%;
-    max-width: 31.04rem;
-    margin-right: auto;
-    margin-left: auto; }
+  .grid-5 {
+    width: 41.66667%; }
 
-  .grid-7, .mobile-grid-7 {
-    width: 57.08333%; }
+  .grid-6 {
+    width: 50%; }
 
-  .grid-8, .mobile-grid-8 {
-    width: 65.66667%; }
+  .grid-7 {
+    width: 58.33333%; }
 
-  .centered-grid-8 {
-    width: 65.66667%;
-    max-width: 42.02667rem;
-    margin-right: auto;
-    margin-left: auto; }
+  .grid-8 {
+    width: 66.66667%; }
 
-  .grid-9, .mobile-grid-9 {
-    width: 74.25%; }
+  .grid-9 {
+    width: 75%; }
 
-  .grid-10, .mobile-grid-10 {
-    width: 82.83333%; }
+  .grid-10 {
+    width: 83.33333%; }
 
-  .centered-grid-10 {
-    width: 82.83333%;
-    max-width: 53.01333rem;
-    margin-right: auto;
-    margin-left: auto; }
+  .grid-11 {
+    width: 91.66667%; } }
+.measure {
+  width: 66.66667%;
+  max-width: 50rem;
+  margin-right: auto;
+  margin-left: auto; }
 
-  .grid-11, .mobile-grid-11 {
-    width: 91.41667%; } }
 .button {
   font-family: inherit;
   font-weight: bold;

@@ -1,7 +1,12 @@
 // Grid
 
-$max-width: 64rem;
-$gutter: 3%;
+$max-width: 75rem;
+// Matches .px2
+$gutter: 4rem;
+
+// Matches .px1
+$gutter: 2rem;
+
 $bp1: 40em;
 //$bp2: 64em;
 
@@ -11,51 +16,56 @@ $bp1: 40em;
   margin-left: auto;
 }
 
+.grid,
+.mobile-grid,
+.measure,
+.table-cell {
+  box-sizing: border-box;
+  padding-left: $gutter/2;
+  padding-right: $gutter/2;
+}
+
 // Mobile grid
-//.mobile-grid {
-//  float: left;
-//  margin-left: $gutter*2;
-//  &:first-child { margin-left: 0; }
-//}
-//
-//@for $i from 1 through 11 {
-//  .mobile-grid-#{$i} {
-//    width: percentage($i/12) - ($gutter * 2) + ($gutter * 2 * $i / 12);
-//  }
-//}
+.mobile-grid {
+  float: left;
+}
+
+@for $i from 1 through 11 {
+  .mobile-grid-#{$i} {
+    width: percentage($i/12);
+  }
+}
+
+// Padding reset to remove gutter
+.px0 { padding-right: 0; padding-left: 0; }
 
 // Desktop grid
 @media screen and (min-width: $bp1) {
-  .grid, .mobile-grid {
-    float: left;
-    margin-left: $gutter;
-    &:first-child { margin-left: 0; }
+  .table {
+    display: table;
+    width: 100%;
   }
-
+  .table-fixed {
+    table-layout: fixed;
+  }
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .grid {
+    float: left;
+  }
   @for $i from 1 through 11 {
-    .grid-#{$i}, .mobile-grid-#{$i} {
-      width: percentage($i/12) - $gutter + ($gutter * $i / 12);
-    }
-    //@if ($i < $pre-post-max + 1) and ($i < 12) {
-    //  .grid-pre-#{$i} {
-    //    margin-left: percentage($i/12) + ($gutter * $i / 12) + $gutter;
-    //    &:first-child {
-    //      margin-left: percentage($i/12) + ($gutter * $i / 12);
-    //    }
-    //  }
-    //  .grid-post-#{$i} {
-    //    margin-right: percentage($i/12) + ($gutter * $i / 12);
-    //  }
-    //}
-    @if ($i % 2 == 0 and $i > 3) {
-      .centered-grid-#{$i} {
-        width: percentage($i/12) - $gutter + ($gutter * $i / 12);
-        max-width: (percentage($i/12) - $gutter +($gutter * $i / 12))/100% * $max-width;
-        margin-right: auto;
-        margin-left: auto;
-      }
+    .grid-#{$i} {
+      width: percentage($i/12);
     }
   }
 }
 
+.measure {
+  width: percentage(8/12);
+  max-width: (8/12) * $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
 

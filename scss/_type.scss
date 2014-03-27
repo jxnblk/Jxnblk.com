@@ -6,6 +6,8 @@ body {
   font-weight: 400;
 }
 
+.serif { font-family: 'Merriweather', serif; }
+
 h1, h2, h3, h4, h5, h6, strong, .bold {
   font-weight: 600;
 }
@@ -52,13 +54,6 @@ h5, .h5, .f5, h6, small { font-size: .875rem; line-height: 1.5rem; }
 .caps { text-transform: uppercase; letter-spacing: .2em; }
 .center { text-align: center; }
 .right-align  { text-align: right; }
-
-
-// Typographical Measure
-// Use with the .wrap class to center container
-.measure { max-width: 48rem; }
-.measure-narrow { max-width: 32rem; }
-.measure-wide { max-width: 60rem; }
 
 
 // Leading utilities to control line-height
