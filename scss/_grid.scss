@@ -36,6 +36,19 @@ $bp1: 40em;
   }
 }
 
+// Mobile Table Object
+.mobile-table {
+  display: table;
+  width: 100%;
+}
+.mobile-table-fixed {
+  table-layout: fixed;
+}
+.mobile-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 // Padding reset to remove gutter
 .px0 { padding-right: 0; padding-left: 0; }
 
