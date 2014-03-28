@@ -2,174 +2,272 @@
 <html lang="en"> 
 <head>
 	<meta charset="utf-8">
-  <title>The Work of Brent Jackson</title>
+  <title>The Professional Work of Brent Jackson</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="nofollow">
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather:400,700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather:400,400italic,700|Source+Code+Pro" rel="stylesheet">
   <link href="../scss/style.css" rel="stylesheet">
 </head>
 <body class="">
 
-  <header class="p2">
-    <h1>The Work of Brent Jackson</h1>
+  <header class="measure px2 py4">
+    <h1 class="h2">The Professional Work of Brent Jackson</h1>
   </header>
 
-  <section id="kickstarter" class="px2 py4">
-    <header>
-      <h1>Kickstarter</h1>
-      <h2>2013 – Present</h2>
-    </header>
+  <section id="kickstarter" class="py4">
+    <div class="measure px2">
+      <header class="mb2">
+        <h1 class="">Kickstarter</h1>
+        <h2 class="h4 caps regular">Product Designer, 2013 – Present</h2>
+        <p class="f5 caps mid-gray">Front-end Architecture, Style Guide, Documentation</p>
+      </header>
 
-    <p>
-      One thing I've learned over the years is that page performance matters – a lot –
-      for both user experience and business goals.
-      For some unknown reason, no one was paying attention to the 5 second page load time
-      or the broken mobile web experience.
-      At a whopping 1.1MB, our CSS needed some serious refactoring.
-      And for such a simple consumer-facing site,
-      there's absolutely no reason not to better optimize for mobile devices with responsive web design techniques.
-    </p>
+      <p class="h3 serif">
+        One of the first things I noticed when I started working at Kickstarter
+        was how the other designers were struggling with and spending a lot of time on front-end development.
+        These were smart, talented people, but
+        writing HTML and CSS shouldn’t be that hard and shouldn’t take that long.
+        I had to dig a little further to figure out what was going on.
+      </p>
+      <p class="serif">
+        I quickly noticed that the page load took about 5 seconds and that the minified
+        CSS file was 1.1MB.
+        One thing I've learned over the years is that performance matters <em>a lot</em> –
+        for both business goals and user experience –
+        and even with caching, CSS of that size will certainly cause page rendering problems.
+        For some reason, no one seemed to be paying attention to front-end rendering performance.
+        Who knows how much money creators are missing out on or how many cool projects go unnoticed.
+      </p>
+      <h2 class="mb1">Priorities</h2>
+      <p class="serif">
+        There was also an obvious bottleneck in design process.
+        <del>
+          With no up-front user research,
+          projects were treated as one-off, top-down items on a checklist,
+          and the designers had little to no room for creative exploration.
+          This approach also seems to lead to a lack of collaborative design and communication
+          and flies in the face of everything I’ve learned about agile software development over the years.
+        </del>
+        This seemed like a much larger organizational issue,
+        so I decided to punt on it for the time being.
+      </p>
 
-    <p>
-      Not only that, I noticed that the front-end workflow of my coworkers was a slow and difficult process.
-      I knew that building HTML and CSS shouldn't be this hard and shouldn't take this long.
-    </p>
-
-    <p>
-      I decided to tackle some of the front-end architecture and workflow problems,
-      with the aim to better document our style guide and pattern library.
-      This also meant cleaning up and consolidating all the inconsistent styles.
-    </p>
-
-    <p>
-      The legacy CSS architecture used a plethora of Sass mixins and was organized by Rails views.
-      The old architecture 'scoped' each view by using the body's id at the beginning of the cascade.
-      CSS cannot be scoped – it's global by nature - and I knew the architecture they were using was
-      generally considered bad practice.
-      The outcome of this architecture was that virtually no styles were reusable.
-      Even the typographic scale and grid system used mixins.
-    </p>
-
-    <p>
-      After discussing with the other designers and developers,
-      we decided to begin architecting an OOCSS-based library to slowly ween us off the old system.
-      The other front-end designers were very enthusiastic and quickly picked up the new CSS approach
-      and immediately began contributing.
-      Each new feature rolled out since then has relied heavily on the new library styles and,
-      although there hasn't been a dedicated effort to refactor,
-      we've managed to reduce the overall size of our CSS by about 25% – from 1.1MB to 855KB.
-    </p>
-
-    <blockquote>
-      <div class="clearfix">
-        <img src="https://pbs.twimg.com/profile_images/378800000424094821/68853c218eeb3f33616382d0216a7a4b_bigger.png" class="left mr1"/>
-        <p class="oh">We've been trying OOCSS at @kickstarter (thx to @jxnblk) and it now means I can prototype new pages without writing a single line of CSS.</p>
+      <!--
+        or the broken mobile web experience.
+        For such a simple consumer-facing site, there's no reason we couldn't build a faster, responsive site.
+        <h2 class="h3 mb2">Our 1.1MB minified CSS and our workflow needed some serious refactoring.</h2>
+      -->
+      <h2 class="mb1">Refactoring Workflows and 1.1MB of CSS</h2>
+      <p class="serif">
+        I went about tackling some of the front-end architecture and workflow problems,
+        while aiming to better document our style guide and pattern library.
+        This also meant cleaning up and consolidating all the inconsistent styles
+        across the nearly five-year-old app.
+      </p>
+      <div class="p1 mb1 bg-light-gray rounded">
+<pre>
+=block
+  display: block
+</pre>
       </div>
-      <cite>
-        <a href="https://twitter.com/harllee/status/403175957089222656?screen_name=harllee">Jessica Harlee</a>
-      </cite>
-    </blockquote>
+      <p class="h5 mid-gray">Mixins like this one don't save time for anyone.</p>
+      <p class="serif">
+        The legacy CSS architecture used a plethora of Sass mixins and was organized by Rails views.
+        The old architecture “scoped” each view by using the body’s id at the beginning of the cascade.
+        CSS cannot be scoped – it’s global by nature - and I knew the architecture they were using was
+        generally considered bad practice.
+        The outcome of this approach was that virtually no styles were reusable,
+        and the designers were spending a lot of time rewriting styles.
+        Even the typographic scale and grid system used mixins that created a lot of duplicative code.
+      </p>
 
-    <blockquote>
-      <p>Full width search box. Jackson is a wizard</p>
-      <cite>
-        Commit Message from Zack Sears, designer at Kickstarter
-      </cite>
-    </blockquote>
+      <blockquote class="blockquote p-responsive">
+        <p class="h3 serif italic oh mb1 mid-gray">
+          “We've been trying OOCSS at @kickstarter (thx to @jxnblk)
+          and it now means I can prototype new pages without writing a single line of CSS.”
+        </p>
+        <cite>
+          — <a href="https://twitter.com/harllee/status/403175957089222656?screen_name=harllee" class="mid-gray">Jessica Harlee</a>
+        </cite>
+      </blockquote>
 
-    <pre>
-      Screenshot:
-      https://www.kickstarter.com/events/xoxo2013
-    </pre>
-    <p>As a proof of concept, this event page was built using the new library and no new CSS styles were added.</p>
+      <h2 class="mb1">Getting Everyone On Board</h2>
+      <p class="serif">
+        After discussing with the other designers and developers,
+        we decided to begin architecting an OOCSS-based library to slowly ween us off the old system.
+        The other front-end designers were very enthusiastic, quickly picked up the new CSS approach,
+        and immediately began contributing.
+        Each new feature rolled out since then has relied heavily on the new library styles and,
+        although there hasn’t been a dedicated effort to refactor,
+        we’ve managed to reduce the overall size of our CSS by about <strong>25%</strong> – from about 1.1MB to 855KB.
+      </p>
 
-    <pre>
-      Screenshot of YIR 2013
-    </pre>
-    <p>
-      I developed the 2013 Year in Review site using the new library styles as a base.
-      The slideshow layout necessitated the inclusion of page specific styles that
-      were kept separate from the main app.
-    </p>
-    <pre>Screenshot of Sundance microsite</pre>
-    <p>I also developed the Sundance Film Festival page is also based on the library styles.</p>
 
-    <h2>Open Sourcing It</h2>
-    <p>
-      In attempt to share some of my learnings (and since the Kickstarter style guide is not public),
-      I distilled some of the basics of our library styles into an open source side project:
-      <a href="http://jxnblk.github.io/basscss">BASSCSS</a>.
-    </p>
+      <blockquote class="blockquote p-responsive mid-gray">
+        <p class="h3 serif italic mb1">“Full width search box. Jackson is a wizard”</p>
+        <cite>
+          — Commit Message from Zack Sears, designer at Kickstarter
+        </cite>
+      </blockquote>
+    </div>
+    <div class="container">
+      <div class="clearfix">
+        <div class="grid grid-10 grid-pre-1 grid-post-1">
+          <img src="http://placekitten.com/1024/512" class="full-width"/>
+          <pre>XOXO 2013 https://www.kickstarter.com/events/xoxo2013</pre>
+          <p class="h5 mid-gray">
+            As a proof of concept, this event page was built using the new library and no new CSS styles were added.
+          </p>
+        </div>
+      </div>
 
-    <pre>Singles Club</pre>
-    <p>
-      Singles Club,
-      which I'm helping my friend and coworker Chris Muccioli with,
-      is built using BASSCSS.
-    </p>
+      <div class="clearfix">
+        <div class="grid grid-5 grid-pre-1">
+          <img src="http://placekitten.com/1024/512" class="full-width"/>
+          <pre>YIR 2013</pre>
+        </div>
+        <div class="grid grid-5 grid-post-1">
+          <img src="http://placekitten.com/1024/512" class="full-width"/>
+          <pre>Sundance 2013</pre>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div class="grid grid-10 grid-pre-1 grid-post-1">
+          <p class="h5 mid-gray">
+            I developed both the 2013 Year in Review site and the Sundance 2014 microsite
+            using the new library styles as a base.
+            The non-standard slideshow layouts of these necessitated the inclusion of page specific styles that
+            were kept separate from the main app.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="measure px2">
+      <h2 class="mb1">Open Sourcing It</h2>
+      <p class="serif">
+        In attempt to share some of my learnings – and since the Kickstarter style guide is not public,
+        I distilled some of the basics of our library styles and documentation into an open source side project:
+        <a href="http://jxnblk.github.io/basscss">BASSCSS</a>.
+      </p>
+    </div>
+
+    <div class="clearfix container">
+      <div class="grid grid-10 grid-pre-1">
+        <img src="http://placekitten.com/1024/512" class="full-width"/>
+        <pre>Singles Club</pre>
+        <p class="h5 mid-gray">
+          Singles Club, which I'm helping my friend and coworker Chris Muccioli with, is built using BASSCSS.
+        </p>
+      </div>
+    </div>
+
   </section>
 
-  <section id="stitchfix" class="px2 py4">
-    <header>
+  <section id="stitchfix" class="measure px2 py4">
+    <header class="mb2">
       <h1>Stitch Fix</h1>
-      <h2>2013</h2>
+      <h2 class="h4 caps regular">Lead Designer, 2013</h2>
+      <p class="f5 caps mid-gray">User Research, UX Direction, Prototyping, Front-End Development, IA</p>
     </header>
 
-
-    <p>
-      Stitch Fix is a women's fashion subscription service built around a custom recommendation algorithm
-      and trained in-house stylists. It's what people within the company call a 'mullet app' – that is,
-      neat and simple in the front, but a complex mess in the back.
-
-      I joined just after the launch of their new consumer-facing site as the first designer.
-      We spent a month or so cleaning up small parts of the interface, including the landing page,
+    <p class="h3 serif">
+      Stitch Fix is a women’s fashion subscription service
+      built around a custom recommendation algorithm
+      and trained in-house stylists. It’s what people within the company call a “mullet app”
+      – that is, neat and simple in the front with a complex mess in the back.
+    </p>
+    <pre>Screen of site/nav/etc</pre>
+    <p class="serif">
+      I joined just after the launch of their new consumer-facing site as lead designer.
+      We spent a month or so cleaning up small parts of the site, including the landing page,
       sign up flow, site navigation, visual branding, and the company blog.
-
-      Based on the company priorities and the bottlenecks in the user journey
+      I worked with the Marketing Director to help develop an A/B testing strategy 
+      for the site that she could run while we shifted our focus to internal tools.
+    </p>
+    <h2 class="mb1">A Faster Experience</h2>
+    <p class="serif">
+      Based on company priorities and the bottlenecks in the user journey
       – new customers generally had to wait 4 – 6 weeks after signing up to actually use the service –
       we decided to turn our focus towards replacing the internal tool that the stylists used to research customers
       and choose the clothing and accessories we sent them.
-
-      Before switching tasks, I worked with the Marketing Director to help develop an A/B testing strategy 
-      for the consumer-facing site that could run while we worked on the internal tool.
-
+    </p>
+    <p class="serif">
       The tool that the stylists were using was build on Django
       and was essentially a series of tables displaying the database. 
-      We knew about a lot of low-hanging fruit in regards to improving the tool,
-      but I decided to do some lean UX research before doing any sketches.
-
+      We knew about a lot of low-hanging fruit,
+      but I decided to do some lean UX research before landing on any one direction.
+    </p>
+    <pre>gif of silverback video</pre>
+    <p class="serif">
       The first week, I ran testing sessions with four stylists.
       The sessions began with an open-ended contextual inquiry
-      and lead into shadowing each participant as they 'packed a fix'.
-      After transcribing highlights and taking some notes,
-      I shared the results with the rest of the development team and discussed the findings.
-
+      and lead into shadowing each participant as they
+      went through their normal workflow.
+      After transcribing highlights and taking notes,
+      I shared the results with the rest of the development team and we discussed the findings.
+    </p>
+    <pre>Photo from sketch session</pre>
+    <p class="serif">
       The second week, I facilitated a post-it note sketching session with the entire team of stylists.
       Coming from non-product-development jobs before, they really enjoyed the session,
       and a lot of great ideas came out of it.
       After documenting the session, the development team met again to discuss.
-
-      The next two weeks, we focused on sketching ideas and build rapid prototypes to test with.
     </p>
-
-
-    <ul>
-      <li>a/b testing</li>
-      <li>internal tools</li>
-      <li>contextual inquiry</li>
-      <li>user testing</li>
-      <li>collaborative design facilitation</li>
-      <li>participatory design sessions</li>
-      <li>front end architecture</li>
-    </ul>
-
+    <p class="serif">
+      The next two weeks, we focused on sketching ideas and building rapid prototypes to test with.
+      We came up with a lot of different ideas, including a binary image-based wizard flow,
+      a keyboard command based app, a social-network like conversation view,
+      and one that followed patterns in traditional e-commerce apps.
+      In an effort to release an MVP soon, we decided to focus on the e-commerce-influenced direction.
+    </p>
+    <pre>gif of silverback video</pre>
+    <p class="serif">
+      I continued our research by user testing the new prototype with four different stylists.
+      We continued to iterate on the prototype throughout the testing in attempt to make
+      the transition to the new app as easy as possible for the stylists.
+    </p>
+    <p class="serif">
+      I'd made plenty of prototypes in the past, using HTML & CSS and tools like Ratchet, Keynote, Blueprint,
+      but I knew next to nothing about Javascript and felt like my CSS was not production-ready.
+      We originally planned to have the front-end developer build the actual app and to keep
+      the prototypes on separate branches.
+      At the time, the front-end developer was busy with tools to speed up the warehouse operations.
+    </p>
+    <p class="serif">
+      After several code reviews and some coaching from the front-end developer,
+      we decided that we should clean up the prototype a bit and ship it,
+      with the intent of consolidating components and better organizing the code as we went along.
+      During that time, he taught me a lot about CSS and front-end architecture,
+      and I took it upon myself to learn more about Javascript and front-end MVCs.
+    </p>
+    <p class="serif">
+      Although the team of stylists was nowhere near large enough to get significant data from,
+      we wanted to be sure that the new app wouldn’t negatively affect their workflows.
+      We decided to split the team into two groups:
+      one continuing to use the old app and another using the new one.
+      After about a week of use, the stylists more than doubled their output using the new app.
+      We knew we had a clear winner, and switched the entire team over.
+    </p>
+    <p class="serif">
+      During this time, we continued to shadow and monitor the stylists to make sure we 
+      addressed any of their concerns.
+      The development team and I also discussed the use of a front-end MVC framework
+      instead of forcing jQuery to work in ways it wasn’t intended to.
+      In my own time, I began teaching myself Angular JS and built
+      <a href="http://soundrad.com">soundrad.com</a>
+      to vet the framework.
+    </p>
+    <pre>soundrad image</pre>
   </section>
 
-  <section id="livingsocial" class="px2 py4">
-    <header>
+  <section id="livingsocial" class="measure px2 py4">
+    <header class="mb1">
       <h1>LivingSocial</h1>
-      <h2>2010 – 2013</h2>
+      <h2 class="h4 caps regular">Senior UX Designer, 2010 – 2013</h2>
+      <p class="f5 caps mid-gray">IA, UX Direction, Branding, Mobile App Design, Style Guides, Internal Designer Resources, Documentation</p>
     </header>
+    <h3>Outline</h3>
     <ul>
       <li>logo design & branding</li>
       <li>icon system</li>
@@ -195,10 +293,11 @@
     </ul>
   </section>
 
-  <section id="opower" class="px2 py4">
-    <header>
+  <section id="opower" class="measure px2 py4">
+    <header class="mb1">
       <h1>Opower</h1>
-      <h2>2008 – 2010</h2>
+      <h2 class="h4 caps regular">Designer, 2008 – 2010</h2>
+      <p class="f5 caps mid-gray">Visual Design, Branding, Data Visualization, Prototyping, Style Guide, Documentation</p>
     </header>
     <ul>
       <li>icon design/branding</li>

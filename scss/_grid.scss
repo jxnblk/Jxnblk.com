@@ -72,6 +72,16 @@ $bp1: 40em;
     .grid-#{$i} {
       width: percentage($i/12);
     }
+    @if ($i < 4) {
+      .grid-pre-#{$i} {
+        margin-left: percentage($i/12);
+        //margin-left: percentage($i/12) + ($gutter * $i / 12) + $gutter;
+      }
+      .grid-post-#{$i} {
+        margin-right: percentage($i/12);
+        //margin-right: percentage($i/12) + ($gutter * $i / 12);
+      }
+    }
   }
   .measure {
     width: percentage(8/12);
