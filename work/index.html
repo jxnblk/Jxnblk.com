@@ -10,23 +10,23 @@
 </head>
 <body class="">
 
-  <header class="measure px2 py4">
+  <header class="measure py4">
     <h1 class="h2">The Professional Work of Brent Jackson</h1>
   </header>
 
   <section id="kickstarter" class="py4">
-    <div class="measure px2">
+    <div class="measure ">
       <header class="mb2">
         <h1 class="">Kickstarter</h1>
         <h2 class="h4 caps regular">Product Designer, 2013 – Present</h2>
-        <p class="f5 caps mid-gray">Front-end Architecture, Style Guide, Documentation</p>
+        <p class="f5 mid-gray">Front-end Architecture, Style Guide, Documentation</p>
       </header>
 
       <p class="h3 serif">
         One of the first things I noticed when I started working at Kickstarter
         was how the other designers were struggling with and spending a lot of time on front-end development.
-        These were smart, talented people, but
-        writing HTML and CSS shouldn’t be that hard and shouldn’t take that long.
+        These were smart, talented people,
+        and writing HTML and CSS shouldn’t be that hard and shouldn’t take that long.
         I had to dig a little further to figure out what was going on.
       </p>
       <p class="serif">
@@ -38,19 +38,17 @@
         For some reason, no one seemed to be paying attention to front-end rendering performance.
         Who knows how much money creators are missing out on or how many cool projects go unnoticed.
       </p>
+
+      <!--
       <h2 class="mb1">Priorities</h2>
       <p class="serif">
         There was also an obvious bottleneck in design process.
-        <del>
-          With no up-front user research,
-          projects were treated as one-off, top-down items on a checklist,
-          and the designers had little to no room for creative exploration.
-          This approach also seems to lead to a lack of collaborative design and communication
-          and flies in the face of everything I’ve learned about agile software development over the years.
-        </del>
+        The designers were generally brought on board late in the process,
+        and there was little to no collaboration or critiquing between the designers.
         This seemed like a much larger organizational issue,
         so I decided to punt on it for the time being.
       </p>
+      -->
 
       <!--
         or the broken mobile web experience.
@@ -80,8 +78,10 @@
         and the designers were spending a lot of time rewriting styles.
         Even the typographic scale and grid system used mixins that created a lot of duplicative code.
       </p>
+    </div>
 
-      <blockquote class="blockquote p-responsive">
+    <div class="measure-grid-6 py2">
+      <blockquote class="blockquote">
         <p class="h3 serif italic oh mb1 mid-gray">
           “We've been trying OOCSS at @kickstarter (thx to @jxnblk)
           and it now means I can prototype new pages without writing a single line of CSS.”
@@ -90,7 +90,9 @@
           — <a href="https://twitter.com/harllee/status/403175957089222656?screen_name=harllee" class="mid-gray">Jessica Harlee</a>
         </cite>
       </blockquote>
+    </div>
 
+    <div class="measure ">
       <h2 class="mb1">Getting Everyone On Board</h2>
       <p class="serif">
         After discussing with the other designers and developers,
@@ -101,15 +103,19 @@
         although there hasn’t been a dedicated effort to refactor,
         we’ve managed to reduce the overall size of our CSS by about <strong>25%</strong> – from about 1.1MB to 855KB.
       </p>
+    </div>
 
-
-      <blockquote class="blockquote p-responsive mid-gray">
+    <!--
+    <div class="measure-grid-6 py2">
+      <blockquote class="blockquote mid-gray">
         <p class="h3 serif italic mb1">“Full width search box. Jackson is a wizard”</p>
         <cite>
           — Commit Message from Zack Sears, designer at Kickstarter
         </cite>
       </blockquote>
     </div>
+    -->
+
     <div class="container">
       <div class="clearfix">
         <div class="grid grid-10 grid-pre-1 grid-post-1">
@@ -121,7 +127,6 @@
           </p>
         </div>
       </div>
-
       <div class="clearfix">
         <div class="grid grid-5 grid-pre-1">
           <a href="//kickstarter.com/year/2013" target="_blank">
@@ -134,19 +139,17 @@
           </a>
         </div>
       </div>
-      <div class="clearfix">
-        <div class="grid grid-10 grid-pre-1 grid-post-1">
-          <p class="h5 mid-gray">
-            I developed both the 2013 Year in Review site and the Sundance 2014 microsite
-            using the new library styles as a base.
-            The non-standard slideshow layouts of these necessitated the inclusion of page specific styles that
-            were kept separate from the main app.
-          </p>
-        </div>
+      <div class="measure-grid-10">
+        <p class="h5 mid-gray">
+          I developed both the 2013 Year in Review site and the Sundance 2014 microsite
+          using the new library styles as a base.
+          The non-standard slideshow layouts of these necessitated the inclusion of page specific styles that
+          were kept separate from the main app.
+        </p>
       </div>
     </div>
 
-    <div class="measure px2">
+    <div class="measure ">
       <h2 class="mb1">Open Sourcing It</h2>
       <p class="serif">
         In attempt to share some of my learnings – and since the Kickstarter style guide is not public,
@@ -170,109 +173,130 @@
 
   </section>
 
-  <section id="stitchfix" class="measure px2 py4">
-    <header class="mb2">
-      <h1>Stitch Fix</h1>
-      <h2 class="h4 caps regular">Lead Designer, 2013</h2>
-      <p class="f5 caps mid-gray">User Research, UX Direction, Prototyping, Front-End Development, IA</p>
-    </header>
+  <section id="stitchfix" class="py4">
+    <div class="measure ">
+      <header class="mb2">
+        <h1>Stitch Fix</h1>
+        <h2 class="h4 caps regular">Lead Designer, 2013</h2>
+        <p class="f5 mid-gray">User Research, UX Direction, Prototyping, Front-End Development, IA</p>
+      </header>
 
-    <p class="h3 serif">
-      Stitch Fix is a women’s fashion subscription service
-      built around a custom recommendation algorithm
-      and trained in-house stylists. It’s what people within the company call a “mullet app”
-      – that is, neat and simple in the front with a complex mess in the back.
-    </p>
-    <pre>Screen of site/nav/etc</pre>
-    <p class="serif">
-      I joined just after the launch of their new consumer-facing site as lead designer.
-      We spent a month or so cleaning up small parts of the site, including the landing page,
-      sign up flow, site navigation, visual branding, and the company blog.
-      I worked with the Marketing Director to help develop an A/B testing strategy 
-      for the site that she could run while we shifted our focus to internal tools.
-    </p>
-    <h2 class="mb1">A Faster Experience</h2>
-    <p class="serif">
-      Based on company priorities and the bottlenecks in the user journey
-      – new customers generally had to wait 4 – 6 weeks after signing up to actually use the service –
-      we decided to turn our focus towards replacing the internal tool that the stylists used to research customers
-      and choose the clothing and accessories we sent them.
-    </p>
-    <p class="serif">
-      The tool that the stylists were using was build on Django
-      and was essentially a series of tables displaying the database. 
-      We knew about a lot of low-hanging fruit,
-      but I decided to do some lean UX research before landing on any one direction.
-    </p>
-    <pre>gif of silverback video</pre>
-    <p class="serif">
-      The first week, I ran testing sessions with four stylists.
-      The sessions began with an open-ended contextual inquiry
-      and lead into shadowing each participant as they
-      went through their normal workflow.
-      After transcribing highlights and taking notes,
-      I shared the results with the rest of the development team and we discussed the findings.
-    </p>
-    <pre>Photo from sketch session</pre>
-    <p class="serif">
-      The second week, I facilitated a post-it note sketching session with the entire team of stylists.
-      Coming from non-product-development jobs before, they really enjoyed the session,
-      and a lot of great ideas came out of it.
-      After documenting the session, the development team met again to discuss.
-    </p>
-    <p class="serif">
-      The next two weeks, we focused on sketching ideas and building rapid prototypes to test with.
-      We came up with a lot of different ideas, including a binary image-based wizard flow,
-      a keyboard command based app, a social-network like conversation view,
-      and one that followed patterns in traditional e-commerce apps.
-      In an effort to release an MVP soon, we decided to focus on the e-commerce-influenced direction.
-    </p>
-    <pre>gif of silverback video</pre>
-    <p class="serif">
-      I continued our research by user testing the new prototype with four different stylists.
-      We continued to iterate on the prototype throughout the testing in attempt to make
-      the transition to the new app as easy as possible for the stylists.
-    </p>
-    <p class="serif">
-      I'd made plenty of prototypes in the past, using HTML & CSS and tools like Ratchet, Keynote, Blueprint,
-      but I knew next to nothing about Javascript and felt like my CSS was not production-ready.
-      We originally planned to have the front-end developer build the actual app and to keep
-      the prototypes on separate branches.
-      At the time, the front-end developer was busy with tools to speed up the warehouse operations.
-    </p>
-    <p class="serif">
-      After several code reviews and some coaching from the front-end developer,
-      we decided that we should clean up the prototype a bit and ship it,
-      with the intent of consolidating components and better organizing the code as we went along.
-      During that time, he taught me a lot about CSS and front-end architecture,
-      and I took it upon myself to learn more about Javascript and front-end MVCs.
-    </p>
-    <p class="serif">
-      Although the team of stylists was nowhere near large enough to get significant data from,
-      we wanted to be sure that the new app wouldn’t negatively affect their workflows.
-      We decided to split the team into two groups:
-      one continuing to use the old app and another using the new one.
-      After about a week of use, the stylists more than doubled their output using the new app.
-      We knew we had a clear winner, and switched the entire team over.
-    </p>
-    <p class="serif">
-      During this time, we continued to shadow and monitor the stylists to make sure we 
-      addressed any of their concerns.
-      The development team and I also discussed the use of a front-end MVC framework
-      instead of forcing jQuery to work in ways it wasn’t intended to.
-      In my own time, I began teaching myself Angular JS and built
-      <a href="http://soundrad.com">soundrad.com</a>
-      to vet the framework.
-    </p>
-    <pre>soundrad image</pre>
+      <p class="h3 serif">
+        Stitch Fix is a women’s fashion subscription service
+        built around a custom recommendation algorithm
+        and trained in-house stylists. It’s what people within the company call a “mullet app”
+        – that is, neat and simple in the front with a complex mess in the back.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-6">
+        <img src="images/stitchfix-how-it-works.png" alt="How it works comps" class="full-width outline" />
+        <p class="h5 mid-gray">How it works sketches</p>
+      </div>
+      <div class="grid grid-6">
+        <img src="images/stitchfix-nav.png" alt="Navigation diagram" class="full-width" />
+        <p class="h5 mid-gray">Navigation diagram</p>
+      </div>
+    </div>
+    <div class="measure">
+      <p class="serif">
+        I joined just after the launch of their new consumer-facing site as lead designer.
+        We spent a month or so cleaning up small parts of the site, including the landing page,
+        sign up flow, site navigation, visual branding, and the company blog.
+        I worked with the Marketing Director to help develop an A/B testing strategy 
+        for the site that she could run while we shifted our focus to internal tools.
+      </p>
+      <h2 class="mb1">A Faster Experience</h2>
+      <p class="serif">
+        Based on company priorities and the bottlenecks in the user journey
+        – new customers generally had to wait 4 – 6 weeks after signing up to actually use the service –
+        we decided to turn our focus towards replacing the internal tool that the stylists used to research customers
+        and choose the clothing and accessories we sent them.
+      </p>
+      <p class="serif">
+        The tool that the stylists were using was build on Django
+        and was essentially a series of tables displaying the database. 
+        We knew about a lot of low-hanging fruit,
+        but I decided to do some lean UX research before landing on any one direction.
+      </p>
+      <img src="images/stitchfix-cockpit.gif" alt="Old Stylist Cockpit user testing" class="full-width" />
+      <p class="h5 mid-gray">User testing session with the old internal tool</p>
+      <p class="serif">
+        The first week, I ran testing sessions with four stylists.
+        The sessions began with an open-ended contextual inquiry
+        and lead into shadowing each participant as they
+        went through their normal workflow.
+        After transcribing highlights and taking notes,
+        I shared the results with the rest of the development team and we discussed the findings.
+      </p>
+      <pre>Photo from sketch session</pre>
+      <p class="serif">
+        The second week, I facilitated a post-it note sketching session with the entire team of stylists.
+        Coming from non-product-development jobs before, they really enjoyed the session,
+        and a lot of great ideas came out of it.
+        After documenting the session, the development team met again to discuss.
+      </p>
+      <p class="serif">
+        The next two weeks, we focused on sketching ideas and building rapid prototypes to test with.
+        We came up with a lot of different ideas, including a binary image-based wizard flow,
+        a keyboard command based app, a social-network like conversation view,
+        and one that followed patterns in traditional e-commerce apps.
+        In an effort to release an MVP soon, we decided to focus on the e-commerce-influenced direction.
+      </p>
+      <img src="images/stitchfix-minx.gif" alt="New Stylist app user testing" class="full-width" />
+      <p class="h5 mid-gray">User testing a prototype of the new tool</p>
+      <p class="serif">
+        I continued our research by user testing the new prototype with four different stylists.
+        We continued to iterate on the prototype throughout the testing in attempt to make
+        the transition to the new app as easy as possible for the stylists.
+      </p>
+      <p class="serif">
+        I'd made plenty of prototypes in the past, using HTML & CSS and tools like Ratchet, Keynote, Blueprint,
+        but I knew next to nothing about Javascript and felt like my CSS was not production-ready.
+        We originally planned to have the front-end developer build the actual app and to keep
+        the prototypes on separate branches.
+        At the time, the front-end developer was busy with tools to speed up the warehouse operations.
+      </p>
+    </div>
+    <div class="measure-grid-10">
+      <img src="images/minx.png" alt="Stylist app" class="full-width" />
+      <p class="h5 mid-gray">The new stylist app</p>
+    </div>
+    <div class="measure">
+      <p class="serif">
+        After several code reviews and some coaching from the front-end developer,
+        we decided that we should clean up the prototype a bit and ship it,
+        with the intent of consolidating components and better organizing the code as we went along.
+        During that time, he taught me a lot about CSS and front-end architecture,
+        and I took it upon myself to learn more about Javascript and front-end MVCs.
+      </p>
+      <p class="serif">
+        Although the team of stylists was nowhere near large enough to get significant data from,
+        we wanted to be sure that the new app wouldn’t negatively affect their workflows.
+        We decided to split the team into two groups:
+        one continuing to use the old app and another using the new one.
+        After about a week of use, the stylists more than doubled their output using the new app.
+        We knew we had a clear winner, and switched the entire team over.
+      </p>
+      <p class="serif">
+        During this time, we continued to shadow and monitor the stylists to make sure we 
+        addressed any of their concerns.
+        The development team and I also discussed the use of a front-end MVC framework
+        instead of forcing jQuery to work in ways it wasn’t intended to.
+        In my own time, I began teaching myself Angular JS and built
+        <a href="http://soundrad.com">soundrad.com</a>
+        to vet the framework.
+      </p>
+      <pre>soundrad image</pre>
+    </div>
   </section>
 
   <section id="livingsocial" class="py4">
-    <div class="measure px2">
+    <div class="measure ">
       <header class="mb1">
         <h1>LivingSocial</h1>
         <h2 class="h4 caps regular">Senior UX Designer, 2010 – 2013</h2>
-        <p class="f5 caps mid-gray">IA, UX Direction, Branding, Mobile App Design, Style Guides, Internal Designer Resources, Documentation</p>
+        <p class="f5 mid-gray">IA, UX Direction, Branding, Mobile App Design, Style Guides, Internal Designer Resources, Documentation</p>
       </header>
       <p class="serif">
         The first project I worked on at LivingSocial was the logo and branding.
@@ -306,7 +330,7 @@
         <p class="h5 mid-gray">LivingSocial icons used on a billboard in Times Square</p>
       </div>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         The platform was growing quickly and there was a desire test out several new products in different markets.
         The iPhone app at the time, built in a hurry, was not well suited to scale to meet business goals,
@@ -319,13 +343,11 @@
         iterating on the different options as we went along.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-10 grid-pre-1 grid-post-1">
-        <img src="images/livingsocial-iphone-app.jpg" alt="LivingSocial iPhone app" class="full-width" />
-        <p class="h5 center mid-gray">LivingSocial iPhone App</p>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/livingsocial-iphone-app.jpg" alt="LivingSocial iPhone app" class="full-width" />
+      <p class="h5 center mid-gray">LivingSocial iPhone App</p>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         With the desire to release the new app in time for the branding unveiling in our Super Bowl Ad,
         we iterated on a couple directions for an MVP and did guerilla usability testing in the Chinatown
@@ -340,13 +362,11 @@
         for how to handle the location-based app navigation.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-10 grid-pre-1 grid-post-1">
-        <img src="images/livingsocial-instant-deals.jpg" alt="LivingSocial Instant Deals" class="full-width" />
-        <p class="h5 center mid-gray">LivingSocial Instant Deals</p>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/livingsocial-instant-deals.jpg" alt="LivingSocial Instant Deals" class="full-width" />
+      <p class="h5 center mid-gray">LivingSocial Instant Deals</p>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         Launching with a huge PR stunt in DC,
         with the company offering a $1 lunch for anyone using the new <em>Instant Deals</em> product,
@@ -375,7 +395,7 @@
         </p>
       </div>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         After several attempts at marketing this product in a dozen or so markets,
         the business model just wasn't working.
@@ -385,13 +405,11 @@
         I spoke with several internal sales people and a few local restaurants to research what their needs were.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-10 grid-pre-1 grid-post-1">
-        <img src="images/livingsocial-takeout-and-delivery.jpg" alt="LivingSocial Takeout & Delivery" class="full-width" />
-        <p class="h5 midgray">LivingSocial Takeout & Delivery</p>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/livingsocial-takeout-and-delivery.jpg" alt="LivingSocial Takeout & Delivery" class="full-width" />
+      <p class="h5 midgray">LivingSocial Takeout & Delivery</p>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         The design team and the product grew quite a bit over the next few months.
         User research had shown that customers' brand perception and understanding
@@ -419,7 +437,7 @@
       <pre>Mobile/Desktop Navigation Mapping</pre>
       <pre>Responsive Desktop Prototype</pre>
       -->
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         One of my coworkers on the team had conducted an online open card sort,
         and had been working with the Marketing team's research to help inform our direction.
@@ -442,13 +460,14 @@
         that aligned with the new product IA.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-10 grid-pre-1 grid-post-1">
-        <img src="images/livingsocial-iphone-style-guide.png" alt="iPhone app style guide and UI components" class="full-width" />
-        <p class="h5 mid-gray">iPhone app documentation</p>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/livingsocial-iphone-style-guide.png" alt="iPhone app style guide and UI components" class="full-width" />
+      <p class="h5 mid-gray">
+        iPhone app documentation
+        <a href="livingsocial-iphone-style-guide.pdf" target="_blank">(View PDF Style Guide)</a>
+      </p>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         Part of the new IA and company organization required every designer to work on the mobile
         component of their product, rather than siloing it off to a separate team.
@@ -467,11 +486,9 @@
         and that cross-team strong communication can lead to a lot of great things.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-10 grid-pre-1 grid-post-1">
-        <img src="images/livingsocial-signal.jpg" alt="Signal app prototype" class="full-width" />
-        <p class="h5 mid-gray">Signal app prototype</p>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/livingsocial-signal.jpg" alt="Signal app prototype" class="full-width" />
+      <p class="h5 mid-gray">Signal app prototype</p>
     </div>
 
 
@@ -505,11 +522,11 @@
   </section>
 
   <section id="opower" class="py4">
-    <div class="measure px2">
+    <div class="measure ">
       <header class="mb1">
         <h1>Opower</h1>
         <h2 class="h4 caps regular">Designer, 2008 – 2010</h2>
-        <p class="f5 caps mid-gray">Visual Design, Branding, Data Visualization, Prototyping, Style Guide, Documentation</p>
+        <p class="f5 mid-gray">Visual Design, Branding, Data Visualization, Prototyping, Style Guide, Documentation</p>
       </header>
       <p class="h3 serif">
         Opower is a behavioral science driven energy efficiency software company.
@@ -523,15 +540,11 @@
         I helped the UX designer build and iterate on prototypes for testing.
       </p>
     </div>
-    <div class="container">
-      <div class="clearfix">
-        <div class="grid grid-10 grid-pre-1 grid-post-1">
-          <img src="images/opower-astro-1920.jpg" alt="Opower Web App" class="full-width" />
-          <p class="h5 mid-gray">Opower web app</p>
-        </div>
-      </div>
+    <div class="measure-grid-10">
+      <img src="images/opower-astro-1920.jpg" alt="Opower Web App" class="full-width" />
+      <p class="h5 mid-gray">Opower web app</p>
     </div>
-    <div class="measure px2">
+    <div class="measure ">
       <p class="serif">
         As the company grew and they began working on the next version of the web app,
         and after unknowingly breaking the build several times,
@@ -546,16 +559,6 @@
         To date, I've sold over 2,000 copies of this icon set.
       </p>
     </div>
-
-    <!--
-    <ul>
-      <li>icon design/branding</li>
-      <li>whitelabel branding design</li>
-      <li>data visualization</li>
-      <li>style guide</li>
-      <li>prototyping</li>
-    </ul>
-    -->
   </section>
 
 </body>

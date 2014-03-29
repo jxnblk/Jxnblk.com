@@ -19,6 +19,8 @@ $bp1: 40em;
 .grid,
 .mobile-grid,
 .measure,
+.measure-grid-6,
+.measure-grid-10,
 .table-cell {
   box-sizing: border-box;
   padding-left: $gutter/2;
@@ -86,6 +88,18 @@ $bp1: 40em;
   .measure {
     width: percentage(8/12);
     max-width: (8/12) * $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .measure-grid-6 {
+    width: percentage(6/12);
+    max-width: (6/12) * $max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .measure-grid-10 {
+    width: percentage(10/12);
+    max-width: (10/12) * $max-width;
     margin-right: auto;
     margin-left: auto;
   }
