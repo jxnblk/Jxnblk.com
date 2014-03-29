@@ -155,5 +155,9 @@ a {
   background-size: .5rem .5rem;
 }
 
+.outline {
+  box-shadow: 0 0 0 1px $light-gray;
+}
+
 //* { outline: 1px solid rgba($blue,.5); }
 

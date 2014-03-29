@@ -70,7 +70,7 @@
   display: block
 </pre>
       </div>
-      <p class="h5 mid-gray">Mixins like this one don't save time for anyone.</p>
+      <p class="h5 mid-gray">Mixins like this one don't help anyone.</p>
       <p class="serif">
         The legacy CSS architecture used a plethora of Sass mixins and was organized by Rails views.
         The old architecture “scoped” each view by using the body’s id at the beginning of the cascade.
@@ -113,8 +113,9 @@
     <div class="container">
       <div class="clearfix">
         <div class="grid grid-10 grid-pre-1 grid-post-1">
-          <img src="http://placekitten.com/1024/512" class="full-width"/>
-          <pre>XOXO 2013 https://www.kickstarter.com/events/xoxo2013</pre>
+          <a href="//kickstarter.com/events/xoxo2013">
+            <img src="images/kickstarter-xoxo.png" class="full-width outline"/>
+          </a>
           <p class="h5 mid-gray">
             As a proof of concept, this event page was built using the new library and no new CSS styles were added.
           </p>
@@ -123,12 +124,14 @@
 
       <div class="clearfix">
         <div class="grid grid-5 grid-pre-1">
-          <img src="http://placekitten.com/1024/512" class="full-width"/>
-          <pre>YIR 2013</pre>
+          <a href="//kickstarter.com/year/2013" target="_blank">
+            <img src="images/kickstarter-yir.png" class="full-width"/>
+          </a>
         </div>
         <div class="grid grid-5 grid-post-1">
-          <img src="http://placekitten.com/1024/512" class="full-width"/>
-          <pre>Sundance 2013</pre>
+          <a href="//kickstarter.com/events/sundance2014" target="_blank">
+            <img src="images/kickstarter-sundance-detail.png" class="full-width"/>
+          </a>
         </div>
       </div>
       <div class="clearfix">
@@ -153,13 +156,16 @@
     </div>
 
     <div class="clearfix container">
-      <div class="grid grid-10 grid-pre-1">
-        <img src="http://placekitten.com/1024/512" class="full-width"/>
-        <pre>Singles Club</pre>
-        <p class="h5 mid-gray">
-          Singles Club, which I'm helping my friend and coworker Chris Muccioli with, is built using BASSCSS.
-        </p>
+      <div class="grid grid-6">
+        <img src="images/singlesclub-banner.png" class="full-width"/>
       </div>
+      <div class="grid grid-6">
+        <img src="images/singlesclub-title.png" class="full-width outline"/>
+      </div>
+      <p class="h5 px1 mid-gray">
+        <a href="http://singlesclub.fm">Singles Club</a>,
+        which I'm helping my friend and coworker Chris Muccioli with, is built using BASSCSS.
+      </p>
     </div>
 
   </section>
@@ -261,148 +267,215 @@
     <pre>soundrad image</pre>
   </section>
 
-  <section id="livingsocial" class="measure px2 py4">
-    <header class="mb1">
-      <h1>LivingSocial</h1>
-      <h2 class="h4 caps regular">Senior UX Designer, 2010 – 2013</h2>
-      <p class="f5 caps mid-gray">IA, UX Direction, Branding, Mobile App Design, Style Guides, Internal Designer Resources, Documentation</p>
-    </header>
-    <p class="serif">
-      The first project I worked on at LivingSocial was the logo and branding.
-      At the time they were using a very startup-like logo designed in under an hour by local agency Nclud,
-      and they wanted to elevate the brand to more accurately reflect the size of company they were becoming.
-      Informed by branding work started by an outside agency,
-      I worked on a team with two other designers, and we each went on our own to begin sketching ideas.
-      About twice a week we would meet in person to share ideas and critique each others work.
-    </p>
-    <p class="serif">
-      After about two weeks of sketching and critiquing,
-      we paired down our options to two directions each
-      to share with stakeholders across the company.
-      Ultimately type treatment from one of my options and a mark conceived by my coworker were chosen.
-      She continued working on refining the concept and building out the branding system,
-      while I switched to on a revamp of the iPhone app.
-    </p>
-    <p class="serif">
-      I learned that you should be careful what you leave on the outside of your Illustrator artboards.
-      As the final branding was revealed to the teams,
-      I'd noticed that some of my rough icon sketches were all over the place.
-      I was flattered, but I had to scramble to clean up the icons
-      I'd started before they began using them for billboards in Times Square.
-    </p>
-    <pre>Times Square photo</pre>
+  <section id="livingsocial" class="py4">
+    <div class="measure px2">
+      <header class="mb1">
+        <h1>LivingSocial</h1>
+        <h2 class="h4 caps regular">Senior UX Designer, 2010 – 2013</h2>
+        <p class="f5 caps mid-gray">IA, UX Direction, Branding, Mobile App Design, Style Guides, Internal Designer Resources, Documentation</p>
+      </header>
+      <p class="serif">
+        The first project I worked on at LivingSocial was the logo and branding.
+        At the time they were using a very startup-like logo designed in under an hour by local agency Nclud,
+        and they wanted to elevate the brand to more accurately reflect the size of company they were becoming.
+        Informed by branding work started by an outside agency,
+        I worked on a team with two other designers, and we each went on our own to begin sketching ideas.
+        About twice a week we would meet in person to share ideas and critique each others work.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-6">
+        <p class="serif">
+          After about two weeks of sketching and critiquing,
+          we paired down our options to two directions each
+          to share with stakeholders across the company.
+          Ultimately type treatment from one of my options and a mark conceived by my coworker were chosen.
+          She continued working on refining the concept and building out the branding system,
+          while I switched to on a revamp of the iPhone app.
+        </p>
+        <p class="serif">
+          I learned that you should be careful what you leave on the outside of your Illustrator artboards.
+          As the final branding was revealed to the teams,
+          I'd noticed that some of my rough icon sketches were all over the place.
+          I was flattered, but I had to scramble to clean up the icons
+          I'd started before they began using them for billboards in Times Square.
+        </p>
+      </div>
+      <div class="grid grid-6">
+        <img src="images/livingsocial-icons.jpg" alt="LivingSocial Icons on Billboard" class="full-width" />
+        <p class="h5 mid-gray">LivingSocial icons used on a billboard in Times Square</p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        The platform was growing quickly and there was a desire test out several new products in different markets.
+        The iPhone app at the time, built in a hurry, was not well suited to scale to meet business goals,
+        so a product manager, the iOS developer, and I began brainstorming and sketching ideas for the next version.
+        There was also the need to update the visual design for the new branding.
+      </p>
+      <p class="serif">
+        I mocked up several directions for the app, using the new, still evolving visual identity,
+        and regularly checked in with rest of the design team for group critiques,
+        iterating on the different options as we went along.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-10 grid-pre-1 grid-post-1">
+        <img src="images/livingsocial-iphone-app.jpg" alt="LivingSocial iPhone app" class="full-width" />
+        <p class="h5 center mid-gray">LivingSocial iPhone App</p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        With the desire to release the new app in time for the branding unveiling in our Super Bowl Ad,
+        we iterated on a couple directions for an MVP and did guerilla usability testing in the Chinatown
+        neighborhood of DC.
+      </p>
+      <p class="serif">
+        Over the next weeks, we continued to iterate on the app,
+        with a new release going out about once every two weeks.
+        One of the big new products the company wanted to launch was a mobile-only
+        instantly-redeemable deals platform.
+        This product would only launch in specific markets and we explored several different options
+        for how to handle the location-based app navigation.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-10 grid-pre-1 grid-post-1">
+        <img src="images/livingsocial-instant-deals.jpg" alt="LivingSocial Instant Deals" class="full-width" />
+        <p class="h5 center mid-gray">LivingSocial Instant Deals</p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        Launching with a huge PR stunt in DC,
+        with the company offering a $1 lunch for anyone using the new <em>Instant Deals</em> product,
+        the backend infrastructure got hit hard,
+        and the development team worked all day to keep things running.
+        Meanwhile, the executive team realized that they needed a desktop counterpart
+        for their mobile-only product.
+      </p>
+      <p class="serif">
+        Taking direction from the design of the mobile app,
+        I worked closely with a front-end developer to design and build a desktop version.
+        The CTO had a saying, JSIO: just shit it out, and we did just that.
+        That was a long day.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-6">
+        <img src="http://placekitten.com/1024/768" class="full-width" />
+        <p class="h5 mid-gray">Redemption App Prototype & Merchant Center Wireframes</p>
+      </div>
+      <div class="grid grid-6">
+        <p class="serif">
+          Around the same time, the company had been working with a local agency to build
+          merchant tools for these new products. The company acquired this agency,
+          and I began working with them on information architecture and an MVP for the merchant tools.
+        </p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        After several attempts at marketing this product in a dozen or so markets,
+        the business model just wasn't working.
+        The company decided to pivot and turn this product into a direct competitor with Seamless.
+        I worked on IA for an app that would host several hundred different restaurants
+        with drastically different menus.
+        I spoke with several internal sales people and a few local restaurants to research what their needs were.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-10 grid-pre-1 grid-post-1">
+        <img src="images/livingsocial-takeout-and-delivery.jpg" alt="LivingSocial Takeout & Delivery" class="full-width" />
+        <p class="h5 midgray">LivingSocial Takeout & Delivery</p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        The design team and the product grew quite a bit over the next few months.
+        User research had shown that customers' brand perception and understanding
+        of our product offerings was failing our business goals.
+        The newly hired UX Director got the entire design team (around 16 of us) together to work
+        on the consumer-facing product's IA.
+        We split into five teams of about three or four people each to brainstorm and sketch out ideas,
+        meeting regularly with the entire team to critique and discuss.
+      </p>
+    </div>
+    <div class="container">
+      <div class="table">
+        <div class="table-cell grid-6">
+          <img src="images/livingsocial-responsive-prototype.jpg" alt="Responsive prototype" class="full-width" />
+          <p class="h5 mid-gray">Responsive prototype</p>
+        </div>
+        <div class="table-cell grid-6">
+          <img src="images/livingsocial-ia.jpg" alt="IA Sketches" class="full-width" />
+          <p class="h5 mid-gray">IA & navigation diagrams</p>
+        </div>
+      </div>
+    </div>
+    <!--
+      <pre>Content Objects Diagram</pre>
+      <pre>Mobile/Desktop Navigation Mapping</pre>
+      <pre>Responsive Desktop Prototype</pre>
+      -->
+    <div class="measure px2">
+      <p class="serif">
+        One of my coworkers on the team had conducted an online open card sort,
+        and had been working with the Marketing team's research to help inform our direction.
+        Using groupings and labels based on this research,
+        we created a content model, proposed a navigation system for both mobile and desktop,
+        and created a clickable prototype using Bootstrap to demonstrate a responsive
+        website using this new system.
+      </p>
+      <p class="serif">
+        After stealing a few ideas from the others, the entire team decided that the direction
+        we were working on was the strongest. We presented it to the executive team
+        and the rest of the product development team and got immediate buy in.
+      </p>
+      <p class="serif">
+        A few of us on the UX team went to IA Summit in New Orleans.
+        I had a blast and was very inspired by the speakers and workshops I attended.
+        But the timing of the flight caused me to miss an outside product management consultant's
+        work and presentation on our company's process and organization.
+        When I flew back to DC, the entire product development team was now organized by team pods
+        that aligned with the new product IA.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-10 grid-pre-1 grid-post-1">
+        <img src="images/livingsocial-iphone-style-guide.png" alt="iPhone app style guide and UI components" class="full-width" />
+        <p class="h5 mid-gray">iPhone app documentation</p>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        Part of the new IA and company organization required every designer to work on the mobile
+        component of their product, rather than siloing it off to a separate team.
+        With the support of the UX Director, I was a huge proponent for
+        mobile-first responsive design, and I spent most of my time working closely with the other designers
+        on designing and building with this approach.
+        I became the go-to guy for anything mobile related, and I learned a lot about teaching others design.
+      </p>
+      <p class="serif">
+        Shortly after, in the year 2048, I found myself caught up in a heated laser cannon battle with highly evolved bears.
+        I had to get back to the year 2012, but time my re-entry wrong and ran straight into a cab door.
+        After talking to HR and my manager, I decided to stay on part-time and participated in
+        and facilitated every design studio session the UX team held.
+        I learned a lot then, including how it's easier to type one handed than use Adobe apps,
+        that my left-handed sketches looked more like cave paintings than interfaces,
+        and that cross-team strong communication can lead to a lot of great things.
+      </p>
+    </div>
+    <div class="container clearfix">
+      <div class="grid grid-10 grid-pre-1 grid-post-1">
+        <img src="images/livingsocial-signal.jpg" alt="Signal app prototype" class="full-width" />
+        <p class="h5 mid-gray">Signal app prototype</p>
+      </div>
+    </div>
 
-    <p class="serif">
-      The platform was growing quickly and there was a desire test out several new products in different markets.
-      The iPhone app at the time, built in a hurry, was not well suited to scale to meet business goals,
-      so a product manager, the iOS developer, and I began brainstorming and sketching ideas for the next version.
-      There was also the need to update the visual design for the new branding.
-    </p>
-    <p class="serif">
-      I mocked up several directions for the app, using the new, still evolving visual identity,
-      and regularly checked in with rest of the design team for group critiques,
-      iterating on the different options as we went along.
-    </p>
-    <pre>v2 iPhone App</pre>
-    <p class="serif">
-      With the desire to release the new app in time for the branding unveiling in our Super Bowl Ad,
-      we iterated on a couple directions for an MVP and did guerilla usability testing in the Chinatown
-      neighborhood of DC.
-    </p>
-    <p class="serif">
-      Over the next weeks, we continued to iterate on the app,
-      with a new release going out about once every two weeks.
-      One of the big new products the company wanted to launch was a mobile-only
-      instantly-redeemable deals platform.
-      This product would only launch in specific markets and we explored several different options
-      for how to handle the location-based app navigation.
-    </p>
-    <pre>Instant Deals</pre>
-    <p class="serif">
-      Launching with a huge PR stunt in DC,
-      with the company offering a $1 lunch for anyone using the new <em>Instant Deals</em> product,
-      the backend infrastructure got hit hard,
-      and the development team worked all day to keep things running.
-      Meanwhile, the executive team realized that they needed a desktop counterpart
-      for their mobile-only product.
-    </p>
-    <p class="serif">
-      Taking direction from the design of the mobile app,
-      I worked closely with a front-end developer to design and build a desktop version.
-      The CTO had a saying, JSIO: just shit it out, and we did just that.
-      That was a long day.
-    </p>
-    <pre>Redemption App Prototype & Merchant Center Wireframes</pre>
-    <p class="serif">
-      Around the same time, the company had been working with a local agency to build
-      merchant tools for these new products. The company acquired this agency,
-      and I began working with them on information architecture and an MVP for the merchant tools.
-    </p>
-    <p class="serif">
-      After several attempts at marketing this product in a dozen or so markets,
-      the business model just wasn't working.
-      The company decided to pivot and turn this product into a direct competitor with Seamless.
-      I worked on IA for an app that would host several hundred different restaurants
-      with drastically different menus.
-      I spoke with several internal sales people and a few local restaurants to research what their needs were.
-    </p>
-    <pre>Online Ordering diagrams, sketches, mockups</pre>
-    <p class="serif">
-      The design team and the product grew quite a bit over the next few months.
-      User research had shown that customers' brand perception and understanding
-      of our product offerings was failing our business goals.
-      The newly hired UX Director got the entire design team (around 16 of us) together to work
-      on the consumer-facing product's IA.
-      We split into five teams of about three or four people each to brainstorm and sketch out ideas,
-      meeting regularly with the entire team to critique and discuss.
-    </p>
-    <pre>Content Objects Diagram</pre>
-    <pre>Mobile/Desktop Navigation Mapping</pre>
-    <pre>Responsive Desktop Prototype</pre>
-    <p class="serif">
-      One of my coworkers on the team had conducted an online open card sort,
-      and had been working with the Marketing team's research to help inform our direction.
-      Using groupings and labels based on this research,
-      we created a content model, proposed a navigation system for both mobile and desktop,
-      and created a clickable prototype using Bootstrap to demonstrate a responsive
-      website using this new system.
-    </p>
-    <p class="serif">
-      After stealing a few ideas from the others, the entire team decided that the direction
-      we were working on was the strongest. We presented it to the executive team
-      and the rest of the product development team and got immediate buy in.
-    </p>
-    <p class="serif">
-      A few of us on the UX team went to IA Summit in New Orleans.
-      I had a blast and was very inspired by the speakers and workshops I attended.
-      But the timing of the flight caused me to miss an outside product management consultant's
-      work and presentation on our company's process and organization.
-      When I flew back to DC, the entire product development team was now organized by team pods
-      that aligned with the new product IA.
-    </p>
-    <pre>iPhone app assets</pre>
-    <pre>Mobile Style Guide</pre>
-    <p class="serif">
-      Part of the new IA and company organization required every designer to work on the mobile
-      component of their product, rather than siloing it off to a separate team.
-      With the support of the UX Director, I was a huge proponent for
-      mobile-first responsive design, and I spent most of my time working closely with the other designers
-      on designing and building with this approach.
-      I became the go-to guy for anything mobile related, and I learned a lot about teaching others design.
-    </p>
-    <p class="serif">
-      Shortly after, in the year 2048, I found myself caught up in a heated laser cannon battle with highly evolved bears.
-      I had to get back to the year 2012, but time my re-entry wrong and ran straight into a cab door.
-      After talking to HR and my manager, I decided to stay on part-time and participated in
-      and facilitated every design studio session the UX team held.
-      I learned a lot then, including how it's easier to type one handed than use Adobe apps,
-      that my left-handed sketches looked more like cave paintings than interfaces,
-      and that cross-team strong communication can lead to a lot of great things.
-    </p>
 
-
-
-
+    <!--
     <h3>Outline</h3>
     <ul>
       <li>x logo design & branding</li>
@@ -428,40 +501,53 @@
       <li>design team tools</li>
       <li>hackathon skunk works</li>
     </ul>
+    -->
   </section>
 
-  <section id="opower" class="measure px2 py4">
-    <header class="mb1">
-      <h1>Opower</h1>
-      <h2 class="h4 caps regular">Designer, 2008 – 2010</h2>
-      <p class="f5 caps mid-gray">Visual Design, Branding, Data Visualization, Prototyping, Style Guide, Documentation</p>
-    </header>
-    <p class="h3 serif">
-      Opower is a behavioral science driven energy efficiency software company.
-      Working with various energy utilities, they conduct large-scale A/B tests
-      to build energy efficiency solutions backed with science.
-    </p>
-    <p class="serif">
-      Hired as their first dedicated visual designer, I worked closely with the UX designer and web team
-      on their first web application and their flagship direct mail product.
-      I learned a lot about HTML, CSS, and used Subversion version control for the first time.
-      I helped the UX designer build and iterate on prototypes for testing.
-    </p>
-    <pre>iPad photo</pre>
-    <p class="serif">
-      As the company grew and they began working on the next version of the web app,
-      and after unknowingly breaking the build several times,
-      I stopped working in code and began shadowing the UX designer more closely.
-      I built out the visual style guide for the app, along with an icon system,
-      and worked on many energy data visualizations that are still in use today.
-    </p>
+  <section id="opower" class="py4">
+    <div class="measure px2">
+      <header class="mb1">
+        <h1>Opower</h1>
+        <h2 class="h4 caps regular">Designer, 2008 – 2010</h2>
+        <p class="f5 caps mid-gray">Visual Design, Branding, Data Visualization, Prototyping, Style Guide, Documentation</p>
+      </header>
+      <p class="h3 serif">
+        Opower is a behavioral science driven energy efficiency software company.
+        Working with various energy utilities, they conduct large-scale A/B tests
+        to build energy efficiency solutions backed with science.
+      </p>
+      <p class="serif">
+        Hired as their first dedicated visual designer, I worked closely with the UX designer and web team
+        on their first web application and their flagship direct mail product.
+        I learned a lot about HTML, CSS, and used Subversion version control for the first time.
+        I helped the UX designer build and iterate on prototypes for testing.
+      </p>
+    </div>
+    <div class="container">
+      <div class="clearfix">
+        <div class="grid grid-10 grid-pre-1 grid-post-1">
+          <img src="images/opower-astro-1920.jpg" alt="Opower Web App" class="full-width" />
+          <p class="h5 mid-gray">Opower web app</p>
+        </div>
+      </div>
+    </div>
+    <div class="measure px2">
+      <p class="serif">
+        As the company grew and they began working on the next version of the web app,
+        and after unknowingly breaking the build several times,
+        I stopped working in code and began shadowing the UX designer more closely.
+        I built out the visual style guide for the app, along with an icon system,
+        and worked on many energy data visualizations that are still in use today.
+      </p>
 
-    <pre>Geomicons Image</pre>
-    <p class="serif">
-      After realizing my knack for icon design, I created a set of my own and began selling them.
-      To date, I've sold over 2,000 copies of this icon set.
-    </p>
+      <pre>Geomicons Image</pre>
+      <p class="serif">
+        After realizing my knack for icon design, I created a set of my own and began selling them.
+        To date, I've sold over 2,000 copies of this icon set.
+      </p>
+    </div>
 
+    <!--
     <ul>
       <li>icon design/branding</li>
       <li>whitelabel branding design</li>
@@ -469,6 +555,7 @@
       <li>style guide</li>
       <li>prototyping</li>
     </ul>
+    -->
   </section>
 
 </body>
