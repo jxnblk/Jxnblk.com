@@ -32,7 +32,7 @@
       <p class="serif">
         I quickly noticed that the page load took about 5 seconds and that the minified
         CSS file was 1.1MB.
-        One thing I've learned over the years is that performance matters <em>a lot</em> –
+        One thing I’ve learned over the years is that performance matters <em>a lot</em> –
         for both business goals and user experience –
         and even with caching, CSS of that size will certainly cause page rendering problems.
         For some reason, no one seemed to be paying attention to front-end rendering performance.
@@ -68,14 +68,14 @@
   display: block
 </pre>
       </div>
-      <p class="h5 mid-gray">Mixins like this one don't help anyone.</p>
+      <p class="h5 mid-gray">Mixins like this one don’t help anyone.</p>
       <p class="serif">
         The legacy CSS architecture used a plethora of Sass mixins and was organized by Rails views.
         The old architecture “scoped” each view by using the body’s id at the beginning of the cascade.
         CSS cannot be scoped – it’s global by nature - and I knew the architecture they were using was
         generally considered bad practice.
         The outcome of this approach was that virtually no styles were reusable,
-        and the designers were spending a lot of time rewriting styles.
+        and the designers were spending a lot of time writing CSS.
         Even the typographic scale and grid system used mixins that created a lot of duplicative code.
       </p>
     </div>
@@ -83,7 +83,7 @@
     <div class="measure-grid-6 py2">
       <blockquote class="blockquote">
         <p class="h3 serif italic oh mb1 mid-gray">
-          “We've been trying OOCSS at @kickstarter (thx to @jxnblk)
+          “We’ve been trying OOCSS at @kickstarter (thx to @jxnblk)
           and it now means I can prototype new pages without writing a single line of CSS.”
         </p>
         <cite>
@@ -120,7 +120,7 @@
       <div class="clearfix">
         <div class="grid grid-10 grid-pre-1 grid-post-1">
           <a href="//kickstarter.com/events/xoxo2013">
-            <img src="images/kickstarter-xoxo-q30.jpg" class="full-width outline"/>
+            <img src="images/blank.png" data-src="images/kickstarter-xoxo-q30.jpg" class="full-width outline"/>
           </a>
           <p class="h5 mid-gray">
             As a proof of concept, this event page was built using the new library and no new CSS styles were added.
@@ -130,12 +130,12 @@
       <div class="clearfix">
         <div class="grid grid-5 grid-pre-1">
           <a href="//kickstarter.com/year/2013" target="_blank">
-            <img src="images/kickstarter-yir.png" class="full-width"/>
+            <img src="images/blank.png" data-src="images/kickstarter-yir.png" class="full-width"/>
           </a>
         </div>
         <div class="grid grid-5 grid-post-1">
           <a href="//kickstarter.com/events/sundance2014" target="_blank">
-            <img src="images/kickstarter-sundance-detail.jpg" class="full-width"/>
+            <img src="images/blank.png" data-src="images/kickstarter-sundance-detail.jpg" class="full-width"/>
           </a>
         </div>
       </div>
@@ -161,17 +161,17 @@
     <div class="clearfix container py2">
       <div class="grid grid-6">
         <a href="http://singlesclub.fm" target="_blank">
-          <img src="images/singlesclub-banner.jpg" class="full-width"/>
+          <img src="images/blank.png" data-src="images/singlesclub-banner.jpg" class="full-width"/>
         </a>
       </div>
       <div class="grid grid-6">
         <a href="http://singlesclub.fm" target="_blank">
-          <img src="images/singlesclub-title.jpg" class="full-width outline"/>
+          <img src="images/blank.png" data-src="images/singlesclub-title.jpg" class="full-width outline"/>
         </a>
       </div>
       <p class="h5 px1 mid-gray">
         <a href="http://singlesclub.fm" target="_blank">Singles Club</a>,
-        which I'm helping my friend and coworker Chris Muccioli with, is built using BASSCSS.
+        which I’m helping my friend and coworker Chris Muccioli with, is built using BASSCSS.
       </p>
     </div>
 
@@ -194,11 +194,11 @@
     </div>
     <div class="container clearfix py2">
       <div class="grid grid-6">
-        <img src="images/stitchfix-how-it-works.png" alt="How it works comps" class="full-width outline" />
+        <img src="images/blank.png" data-src="images/stitchfix-how-it-works.png" alt="How it works comps" class="full-width outline" />
         <p class="h5 mid-gray">How it works sketches</p>
       </div>
       <div class="grid grid-6">
-        <img src="images/stitchfix-nav-1024.png" alt="Navigation diagram" class="full-width" />
+        <img src="images/blank.png" data-src="images/stitchfix-nav-1024.png" alt="Navigation diagram" class="full-width" />
         <p class="h5 mid-gray">Navigation diagram</p>
       </div>
     </div>
@@ -218,7 +218,7 @@
         and choose the clothing and accessories we sent them.
       </p>
       <p class="serif">
-        The tool that the stylists were using was build on Django
+        The tool that the stylists were using was built with Django
         and was essentially a series of tables displaying the database. 
         We knew about a lot of low-hanging fruit,
         but I decided to do some lean UX research before landing on any one direction.
@@ -227,10 +227,11 @@
     <div class="container py2">
       <div class="table">
         <div class="table-cell grid-6">
-          <img src="images/stitchfix-cockpit.gif" alt="Old Stylist Cockpit user testing" class="full-width" />
+          <img src="images/blank.png" data-src="images/stitchfix-cockpit.gif" alt="Old Stylist Cockpit user testing" class="full-width outline" />
           <p class="h5 mid-gray">User testing session with the old internal tool</p>
         </div>
         <div class="table-cell grid-6">
+          <h2 class="mb1">Research</h2>
           <p class="serif">
             The first week, I ran testing sessions with four stylists.
             The sessions began with an open-ended contextual inquiry
@@ -253,7 +254,7 @@
           </p>
         </div>
         <div class="table-cell grid-5">
-          <img src="images/minx-sketching-session-q10.jpg" alt="Post-it note ideation session" class="full-width" />
+          <img src="images/blank.png" data-src="images/minx-sketching-session-q10.jpg" alt="Post-it note ideation session" class="full-width" />
           <p class="h5 mid-gray">Post-it note ideation session</p>
         </div>
       </div>
@@ -270,25 +271,26 @@
     <div class="container py2">
       <div class="table">
         <div class="table-cell grid-5">
-          <img src="images/stitchfix-minx.gif" alt="New Stylist app user testing" class="full-width" />
+          <img src="images/blank.png" data-src="images/stitchfix-minx.gif" alt="New Stylist app user testing" class="full-width outline" />
           <p class="h5 mid-gray">User testing a prototype of the new tool</p>
         </div>
         <div class="table-cell grid-7">
           <p class="serif">
-            I continued our research by user testing the new prototype with four different stylists.
-            We continued to iterate on the prototype throughout the testing in attempt to make
+            I continued our research by testing the new prototype with four different stylists.
+            We iterated on the prototype throughout the testing in an attempt to make
             the transition to the new app as easy as possible for the stylists.
           </p>
         </div>
       </div>
     </div>
     <div class="measure">
+      <h2 class="mb1">Prototype to Rapid Prototype</h2>
       <p class="serif">
-        I'd made plenty of prototypes in the past, using HTML & CSS and tools like Ratchet, Keynote, Blueprint,
-        but I knew next to nothing about Javascript and felt like my CSS was not production-ready.
+        I’d made plenty of prototypes in the past, using HTML & CSS and tools like Ratchet, Keynote, and Blueprint,
+        but I knew next to nothing about Javascript and didn’t think my CSS was not production-ready.
         We originally planned to have the front-end developer build the actual app and to keep
         the prototypes on separate branches.
-        At the time, the front-end developer was busy with tools to speed up the warehouse operations.
+        At the time, the developer was busy working on tools for warehouse operations.
       </p>
       <p class="serif">
         After several code reviews and some coaching from the front-end developer,
@@ -299,7 +301,7 @@
       </p>
     </div>
     <div class="measure-grid-10">
-      <img src="images/minx.png" alt="Stylist app" class="full-width" />
+      <img src="images/blank.png" data-src="images/minx.png" alt="Stylist app" class="full-width" />
       <p class="h5 mid-gray">The new stylist app</p>
     </div>
     <div class="measure">
@@ -320,7 +322,8 @@
         <a href="http://soundrad.com">soundrad.com</a>
         to vet the framework.
       </p>
-      <pre>soundrad image</pre>
+      <img src="images/blank.png" data-src="images/soundrad.png" alt="SoundRad" class="full-width outline" />
+      <p class="h5 mid-gray">SoundRad</p>
     </div>
   </section>
 
@@ -354,13 +357,13 @@
           <p class="serif">
             I learned that you should be careful what you leave on the outside of your Illustrator artboards.
             As the final branding was revealed to the teams,
-            I'd noticed that some of my rough icon sketches were all over the place.
+            I’d noticed that some of my rough icon sketches were all over the place.
             I was flattered, but I had to scramble to clean up the icons
-            I'd started before they began using them for billboards in Times Square.
+            I’d started before they began using them for billboards in Times Square.
           </p>
         </div>
         <div class="table-cell grid-6">
-          <img src="images/livingsocial-icons.jpg" alt="LivingSocial Icons on Billboard" class="full-width" />
+          <img src="images/blank.png" data-src="images/livingsocial-icons.jpg" alt="LivingSocial Icons on Billboard" class="full-width" />
           <p class="h5 mid-gray">LivingSocial icons used on a billboard in Times Square</p>
         </div>
       </div>
@@ -377,7 +380,7 @@
         and regularly checked in with rest of the design team for group critiques,
         iterating on the different options as we went along.
       </p>
-      <img src="images/livingsocial-iphone-app.jpg" alt="LivingSocial iPhone app" class="full-width" />
+      <img src="images/blank.png" data-src="images/livingsocial-iphone-app.jpg" alt="LivingSocial iPhone app" class="full-width" />
       <p class="h5 center mid-gray">LivingSocial iPhone App</p>
       <p class="serif">
         With the desire to release the new app in time for the branding unveiling in our Super Bowl Ad,
@@ -392,7 +395,7 @@
         This product would only launch in specific markets and we explored several different options
         for how to handle the location-based app navigation.
       </p>
-      <img src="images/livingsocial-instant-deals.jpg" alt="LivingSocial Instant Deals" class="full-width" />
+      <img src="images/blank.png" data-src="images/livingsocial-instant-deals.jpg" alt="LivingSocial Instant Deals" class="full-width" />
       <p class="h5 center mid-gray">LivingSocial Instant Deals</p>
       <p class="serif">
         Launching with a huge PR stunt in DC,
@@ -409,23 +412,25 @@
         That was a long day.
       </p>
     </div>
-    <div class="container clearfix">
-      <div class="grid grid-6">
-        <img src="http://placekitten.com/1024/768" class="full-width" />
-        <p class="h5 mid-gray">Redemption App Prototype & Merchant Center Wireframes</p>
-      </div>
-      <div class="grid grid-6">
-        <p class="serif">
-          Around the same time, the company had been working with a local agency to build
-          merchant tools for these new products. The company acquired this agency,
-          and I began working with them on information architecture and an MVP for the merchant tools.
-        </p>
+    <div class="container py2">
+      <div class="table">
+        <div class="table-cell grid-6">
+          <img src="images/blank.png" data-src="images/livingsocial-merchant-mobile-wireframes.jpg" class="full-width" />
+          <p class="h5 mid-gray">Redemption App Prototype & Merchant Center Wireframes</p>
+        </div>
+        <div class="table-cell grid-6">
+          <p class="serif">
+            Around the same time, the company had been working with a local agency to build
+            merchant tools for these new products. The company acquired this agency,
+            and I began working with them on information architecture and an MVP for the merchant tools.
+          </p>
+        </div>
       </div>
     </div>
     <div class="measure ">
       <p class="serif">
         After several attempts at marketing this product in a dozen or so markets,
-        the business model just wasn't working.
+        the business model just wasn’t working.
         The company decided to pivot and turn this product into a direct competitor with Seamless.
         I worked on IA for an app that would host several hundred different restaurants
         with drastically different menus.
@@ -433,29 +438,29 @@
       </p>
     </div>
     <div class="measure-grid-10">
-      <img src="images/livingsocial-takeout-delivery.jpg" alt="LivingSocial Takeout & Delivery" class="full-width" />
+      <img src="images/blank.png" data-src="images/livingsocial-takeout-delivery.jpg" alt="LivingSocial Takeout & Delivery" class="full-width" />
       <p class="h5 center midgray">LivingSocial Takeout & Delivery</p>
     </div>
     <div class="measure ">
       <p class="serif">
         The design team and the product grew quite a bit over the next few months.
-        User research had shown that customers' brand perception and understanding
+        User research had shown that customers’ brand perception and understanding
         of our product offerings was failing our business goals.
         The newly hired UX Director got the entire design team (around 16 of us) together to work
-        on the consumer-facing product's IA.
+        on the consumer-facing product’s IA.
         We split into five teams of about three or four people each to brainstorm and sketch out ideas,
         meeting regularly with the entire team to critique and discuss.
       </p>
     </div>
-    <div class="container">
+    <div class="container py2">
       <div class="table">
         <div class="table-cell grid-6">
-          <img src="images/livingsocial-responsive-prototype.jpg" alt="Responsive prototype" class="full-width" />
+          <img src="images/blank.png" data-src="images/livingsocial-responsive-prototype-2.jpg" alt="Responsive prototype" class="full-width outline" />
           <p class="h5 mid-gray">Responsive prototype</p>
         </div>
         <div class="table-cell grid-6">
-          <img src="images/livingsocial-ia.jpg" alt="IA Sketches" class="full-width" />
-          <p class="h5 mid-gray">IA & navigation diagrams</p>
+          <img src="images/blank.png" data-src="images/livingsocial-ia-diagram.png" alt="IA diagram" class="full-width" />
+          <p class="h5 mid-gray">IA diagram</p>
         </div>
       </div>
     </div>
@@ -467,7 +472,7 @@
     <div class="measure ">
       <p class="serif">
         One of my coworkers on the team had conducted an online open card sort,
-        and had been working with the Marketing team's research to help inform our direction.
+        and had been working with the Marketing team’s research to help inform our direction.
         Using groupings and labels based on this research,
         we created a content model, proposed a navigation system for both mobile and desktop,
         and created a clickable prototype using Bootstrap to demonstrate a responsive
@@ -481,23 +486,21 @@
       <p class="serif">
         A few of us on the UX team went to IA Summit in New Orleans.
         I had a blast and was very inspired by the speakers and workshops I attended.
-        But the timing of the flight caused me to miss an outside product management consultant's
-        work and presentation on our company's process and organization.
+        But the timing of the flight caused me to miss an outside product management consultant’s
+        work and presentation on our company’s process and organization.
         When I flew back to DC, the entire product development team was now organized by team pods
         that aligned with the new product IA.
       </p>
     </div>
     <div class="container clearfix">
-      <div class="grid grid-4">
-        <img src="images/livingsocial-iphone-template.jpg" alt="iPhone app view flow diagram" class="full-width outline" />
+      <div class="grid grid-8">
+        <img src="images/blank.png" data-src="images/livingsocial-iphone-template.jpg" alt="iPhone app view flow diagram" class="full-width outline" />
         <p class="h5 mid-gray">iPhone app master template</p>
       </div>
       <div class="grid grid-4">
-        <img src="images/livingsocial-iphone-ui.jpg" alt="iPhone app UI components" class="full-width"/>
+        <img src="images/blank.png" data-src="images/livingsocial-iphone-ui.jpg" alt="iPhone app UI components" class="full-width"/>
         <p class="h5 mid-gray">iPhone app UI components</p>
-      </div>
-      <div class="grid grid-4">
-        <img src="images/livingsocial-iphone-style-guide.png" class="full-width outline" />
+        <img src="images/blank.png" data-src="images/livingsocial-iphone-style-guide.png" class="full-width outline" />
         <p class="h5 mid-gray">iPhone app style guide <a href="livingsocial-iphone-style-guide.pdf" target="_blank">(View PDF)</a></p>
       </div>
     </div>
@@ -515,7 +518,7 @@
         I had to get back to the year 2012, but time my re-entry wrong and ran straight into a cab door.
         After talking to HR and my manager, I decided to stay on part-time and participated in
         and facilitated every design studio session the UX team held.
-        I learned a lot then, including how it's easier to type one handed than use Adobe apps,
+        I learned a lot then, including how it’s easier to type one handed than use Adobe apps,
         that my left-handed sketches looked more like cave paintings than interfaces,
         and that cross-team strong communication can lead to a lot of great things.
       </p>
@@ -549,7 +552,7 @@
       </p>
     </div>
     <div class="measure-grid-10">
-      <img src="images/opower-astro-1920.jpg" alt="Opower Web App" class="full-width" />
+      <img src="images/blank.png" data-src="images/opower-astro-1920.jpg" alt="Opower Web App" class="full-width" />
       <p class="h5 mid-gray">Opower web app</p>
     </div>
     <div class="measure ">
@@ -561,13 +564,22 @@
         and worked on many energy data visualizations that are still in use today.
       </p>
 
-      <pre>Geomicons Image</pre>
+      <img src="images/blank.png" data-src="images/geomicons-wired.jpg" alt="Geomicons Wired" class="full-width" />
+      <p class="h5 mid-gray">Geomicons Wired</p>
       <p class="serif">
         After realizing my knack for icon design, I created a set of my own and began selling them.
-        To date, I've sold over 2,000 copies of this icon set.
+        To date, I’ve sold over 2,000 copies of this icon set.
       </p>
     </div>
   </section>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.unveil.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("img").unveil(256);
+    });
+  </script>
 
 </body>
 </html>
