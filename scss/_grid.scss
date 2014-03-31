@@ -1,7 +1,8 @@
 // Grid
 
 $max-width: 75rem;
-// Matches .px2
+// 4 rem matches .px2
+
 $gutter: 3rem;
 
 // Matches .px1
@@ -12,6 +13,13 @@ $bp1: 40em;
 
 .container {
   max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Needs better naming conventions
+.container-gutter {
+  max-width: $max-width - $gutter;
   margin-right: auto;
   margin-left: auto;
 }
