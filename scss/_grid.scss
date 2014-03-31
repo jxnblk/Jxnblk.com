@@ -3,7 +3,7 @@
 $max-width: 75rem;
 // 4 rem matches .px2
 
-$gutter: 3rem;
+$gutter: 1.5rem;
 
 // Matches .px1
 //$gutter: 2rem;
@@ -15,18 +15,22 @@ $bp1: 40em;
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
+  //box-sizing: border-box;
+  //padding-right: $gutter/2;
+  //padding-left: $gutter/2;
 }
-
-// Needs better naming conventions
-.container-gutter {
-  max-width: $max-width - $gutter;
-  margin-right: auto;
-  margin-left: auto;
+.grid-row,
+.remove-gutters {
+  margin-left: -$gutter/2;
+  margin-right: -$gutter/2;
+  //box-sizing: border-box;
+  //padding-right: $gutter/2;
+  //padding-left: $gutter/2;
 }
 
 .grid,
 .mobile-grid,
-.measure,
+//.measure,
 .measure-grid-6,
 .measure-grid-10,
 .table-cell {
@@ -34,6 +38,11 @@ $bp1: 40em;
   padding-left: $gutter/2;
   padding-right: $gutter/2;
 }
+.bb { box-sizing: border-box; }
+//.measure {
+//  padding-right: $gutter;
+//  padding-left: $gutter;
+//}
 
 // Mobile grid
 .mobile-grid {
@@ -94,8 +103,9 @@ $bp1: 40em;
     }
   }
   .measure {
+    //width: percentage(8/12) - percentage( 1 - ($max-width + $gutter) / $max-width );
     width: percentage(8/12);
-    max-width: (8/12) * $max-width;
+    max-width: (8/12) * ($max-width + $gutter * 2);
     margin-right: auto;
     margin-left: auto;
   }
