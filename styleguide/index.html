@@ -9,20 +9,6 @@
 </head>
 <body class="py2 bg-grid">
 
-  <div id="grid-reference" class="container clearfix px1">
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-    <div class="grid grid-1"><div class="bg-blue">1</div></div>
-  </div>
 
   <header class="p1 container">
     <!--
@@ -98,20 +84,23 @@
 
   <section class="bg-light-gray">
     <h1>Grid tests</h1>
-    <div class="container px1">
-      <h1>.container</h1>
-      <div class="clearfix">
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-        <div class="grid grid-2"><div class="bg-blue">2</div></div>
-      </div>
-    </div>
     <div class="container">
       <h1>.container</h1>
-      <div class="grid-row clearfix">
+      <div class="clearfix">
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+        <div class="grid grid-1 px0 bg-blue">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+        <div class="grid grid-1 px0 bg-mid-gray">1 px0</div>
+      </div>
+      <div class="row">
         <div class="grid grid-2"><div class="bg-blue">2</div></div>
         <div class="grid grid-2"><div class="bg-blue">2</div></div>
         <div class="grid grid-2"><div class="bg-blue">2</div></div>
@@ -119,22 +108,58 @@
         <div class="grid grid-2"><div class="bg-blue">2</div></div>
         <div class="grid grid-2"><div class="bg-blue">2</div></div>
       </div>
-    </div>
-    <div class="measure px1">
-      <h1 class="bg-blue">unnested .measure</h1>
-    </div>
-    <div class="container px1">
-      <h1>Table Grid</h1>
-      <div class="grid-row">
-        <div class="table">
-          <div class="table-cell grid-4"><div class="bg-blue">4</div></div>
-          <div class="table-cell grid-4"><div class="bg-blue">4</div></div>
-          <div class="table-cell grid-4"><div class="bg-blue">4</div></div>
-        </div>
+      <div class="row">
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
       </div>
     </div>
+    <!--
+    <div class="measure-grid-6 bg-mid-gray">
+      <h1 class="bg-blue">.measure-grid-6</h1>
+    </div>
+    <div class="measure bg-mid-gray">
+      <h1 class="bg-blue">.measure</h1>
+    </div>
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+      </div>
+      <div class="row">
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+        <div class="grid grid-10"><div class="bg-blue">10</div></div>
+        <div class="grid grid-1"><div class="bg-blue">1</div></div>
+      </div>
+    </div>
+    <!--
+    <div class="measure-grid-10">
+      <h1 class="bg-blue">.measure-grid-10</h1>
+    </div>
+    -->
   </section>
 
+  <!--
   <section id="grid" class="px1 py4 container">
     <h1 class="px1 mb2">Grid</h1>
     <div class="h2 bold clearfix py1 white">
@@ -194,7 +219,9 @@
       </div>
     </div>
   </section>
+  -->
 
+  <!--
   <section id="colors" class="py4 container">
     <h1 class="px2 mb2">Colors</h1>
     <div class="clearfix px1 white">
@@ -247,6 +274,7 @@
       <a class="mr1 mobile-block dark-gray" href="//soundcloud.com/jxnblk">Soundcloud</a>
     </div>
   </footer>
+  -->
 
 </body>
 </html>

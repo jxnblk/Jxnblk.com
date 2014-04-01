@@ -1,48 +1,32 @@
 // Grid
 
 $max-width: 75rem;
-// 4 rem matches .px2
 
 $gutter: 1.5rem;
 
-// Matches .px1
-//$gutter: 2rem;
-
 $bp1: 40em;
-//$bp2: 64em;
 
 .container {
+  overflow: hidden;
   max-width: $max-width;
   margin-right: auto;
   margin-left: auto;
-  //box-sizing: border-box;
-  //padding-right: $gutter/2;
-  //padding-left: $gutter/2;
 }
-.grid-row,
-.remove-gutters {
+.row {
+  overflow: hidden;
   margin-left: -$gutter/2;
   margin-right: -$gutter/2;
-  //box-sizing: border-box;
-  //padding-right: $gutter/2;
-  //padding-left: $gutter/2;
 }
 
 .grid,
 .mobile-grid,
-//.measure,
-.measure-grid-6,
-.measure-grid-10,
 .table-cell {
   box-sizing: border-box;
   padding-left: $gutter/2;
   padding-right: $gutter/2;
+
+  overflow: hidden;
 }
-.bb { box-sizing: border-box; }
-//.measure {
-//  padding-right: $gutter;
-//  padding-left: $gutter;
-//}
 
 // Mobile grid
 .mobile-grid {
@@ -69,7 +53,7 @@ $bp1: 40em;
 }
 
 // Padding reset to remove gutter
-.px0 { padding-right: 0; padding-left: 0; }
+.flush, .px0 { padding-right: 0; padding-left: 0; }
 
 // Desktop grid
 @media screen and (min-width: $bp1) {
@@ -94,30 +78,41 @@ $bp1: 40em;
     @if ($i < 4) {
       .grid-pre-#{$i} {
         margin-left: percentage($i/12);
-        //margin-left: percentage($i/12) + ($gutter * $i / 12) + $gutter;
       }
       .grid-post-#{$i} {
         margin-right: percentage($i/12);
-        //margin-right: percentage($i/12) + ($gutter * $i / 12);
       }
     }
   }
+  /*
+    width of cell = 1/12*100%
+    gutter = 1.5rem
+    max-width = 75rem
+    gutter as % = gutter/max-width at full width
+    gutter difference = -gutter + gutter/12
+
+  
+
+  */
+  // No idea. math
+  $col-width: percentage(1/12);
   .measure {
-    //width: percentage(8/12) - percentage( 1 - ($max-width + $gutter) / $max-width );
-    width: percentage(8/12);
-    max-width: (8/12) * ($max-width + $gutter * 2);
+    width: percentage(8/12) - percentage($gutter/($max-width + $gutter)/2.5);
+    max-width: (8/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
   .measure-grid-6 {
-    width: percentage(6/12);
-    max-width: (6/12) * $max-width;
+    //width: percentage(6/12) - percentage($gutter/$max-width/2);
+    width: 46.5%;
+    max-width: (6/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
   .measure-grid-10 {
-    width: percentage(10/12);
-    max-width: (10/12) * $max-width;
+    width: percentage(10/12) - percentage($gutter/($max-width + $gutter)/5);
+    width: percentage(10/12) - percentage($gutter/$max-width/5);
+    max-width: (10/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
