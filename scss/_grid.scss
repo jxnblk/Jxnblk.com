@@ -1,8 +1,10 @@
 // Grid
 
-$max-width: 75rem;
+$max-width: 72rem;
 
-$gutter: 1.5rem;
+//$gutter: 1.5rem;
+//$gutter: 2rem;
+$gutter: 3rem;
 
 $bp1: 40em;
 
@@ -24,8 +26,6 @@ $bp1: 40em;
   box-sizing: border-box;
   padding-left: $gutter/2;
   padding-right: $gutter/2;
-
-  overflow: hidden;
 }
 
 // Mobile grid
@@ -84,34 +84,17 @@ $bp1: 40em;
       }
     }
   }
-  /*
-    width of cell = 1/12*100%
-    gutter = 1.5rem
-    max-width = 75rem
-    gutter as % = gutter/max-width at full width
-    gutter difference = -gutter + gutter/12
-
-  
-
-  */
-  // No idea. math
-  $col-width: percentage(1/12);
   .measure {
-    width: percentage(8/12) - percentage($gutter/($max-width + $gutter)/2.5);
     max-width: (8/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
   .measure-grid-6 {
-    //width: percentage(6/12) - percentage($gutter/$max-width/2);
-    width: 46.5%;
     max-width: (6/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
   .measure-grid-10 {
-    width: percentage(10/12) - percentage($gutter/($max-width + $gutter)/5);
-    width: percentage(10/12) - percentage($gutter/$max-width/5);
     max-width: (10/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
