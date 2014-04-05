@@ -1,10 +1,8 @@
-// Example theme
-//
-// Edit these styles to adjust the look and feel of your site
+// Jxnblk Style Guide Theme 
 
 
 $blue: #0096cc;
-$light-gray: #eee;
+$light-gray: #eaeff0;
 $mid-gray: #708690;
 $dark-gray: #405660;
 
@@ -151,7 +149,7 @@ a {
 //.transition-all { transition: all .2s ease; }
 
 .bg-grid {
-  background-image: linear-gradient(#fff 87.5%, $light-gray 87.5%);
+  background-image: linear-gradient(transparent, transparent .5rem, $light-gray .5rem);
   background-size: .5rem .5rem;
 }
 

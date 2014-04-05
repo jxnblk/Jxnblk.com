@@ -22,7 +22,8 @@ $bp1: 40em;
 
 .grid,
 .mobile-grid,
-.table-cell {
+.table-cell,
+.mobile-table-cell {
   box-sizing: border-box;
   padding-left: $gutter/2;
   padding-right: $gutter/2;
