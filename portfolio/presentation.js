@@ -23,7 +23,7 @@ function scroll(el) {
       from = bd.scrollTop,
       y = to - from;
   bd.style.marginTop = -y + "px";
-  bd.style.transition = 'margin-top .5s ease';
+  bd.style.transition = 'margin-top .5s ease-in-out';
   bd.addEventListener('transitionend', function(){
     bd.style.marginTop = 0;
     bd.scrollTop = to;
