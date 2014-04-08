@@ -18,6 +18,17 @@
     .bg-darken { background-color: rgba(0,0,0,.8); }
     pre { white-space: pre-wrap; }
     .fill-red { fill: #f52; }
+    .x-scroll { overflow-x: scroll; }
+    .hover-slide-up {
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+      -webkit-transition: -webkit-transform .2s ease-in-out;
+              transition:         transform .2s ease-in-out;
+    }
+    .hover-group:hover .hover-slide-up {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
   </style>
 </head>
 <body>
@@ -47,7 +58,7 @@
     </div>
   </header>
 
-  <section id="go-far" class="js-slide mobile-table min-h100">
+  <section id="go-far" class="js-slide mobile-table min-h100 current">
     <div class="center mobile-table-cell px0">
       <div class="container p2">
         <blockquote>
@@ -127,14 +138,36 @@
     </div>
   </section>
 
+  <section class="js-slide mobile-table min-h100 white bg-mid-gray">
+    <div class="center mobile-table-cell">
+      <h1 class="h0">iPhone & Instant Deals</h1>
+    </div>
+  </section>
+
   <section id="livingsocial-iphone" class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-app.jpg)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-instant-deals.jpg)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-instant-how-it-works.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-takeout-delivery-small.jpg)"> </section>
 
+  <section class="js-slide mobile-table min-h100 white bg-mid-gray">
+    <div class="center mobile-table-cell">
+      <h1 class="h0">A/B Tests</h1>
+    </div>
+  </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-buy-box-ab-tests.png)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-purchase-flow-old.png)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-purchase-flow-new.png)"> </section>
 
-  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-style-guide.png)"> </section>
-  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-ui.jpg)"> </section>
+  <section class="js-slide mobile-table min-h100 white bg-mid-gray">
+    <div class="center mobile-table-cell">
+      <h1 class="h0">Design Team Tools</h1>
+    </div>
+  </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-style-guide-1.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-style-guide-2.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-style-guide-3.png)"> </section>
+
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-ui.png)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-iphone-template.jpg)"> </section>
 
   <section id="livingsocial-ia" class="js-slide mobile-table min-h100 white bg-mid-gray">
@@ -167,12 +200,21 @@
       <h1 class="h0">Audience Segments, Personas, & Card Sorts</h1>
     </div>
   </section>
+
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-persona-molly.jpg)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-persona-martin.jpg)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-ia-card-sort-spreadsheet.jpg)"> </section>
+
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-ia-dpan-1.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-ia-dpan-2.png)"> </section>
+
   <section class="js-slide mobile-table min-h100 white bg-mid-gray">
     <div class="center mobile-table-cell">
       <h1 class="h0">Divergent & Convergent</h1>
     </div>
   </section>
 
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-mobile-sketch-1.jpg)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-ia-diagram.png)"> </section>
 
   <section class="js-slide mobile-table min-h100 white bg-mid-gray">
@@ -185,7 +227,10 @@
       <h1 class="h0">Prototyping</h1>
     </div>
   </section>
-  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-responsive-prototype-2.jpg)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-navigation-diagram.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-mobile-navigation-wireframes-1.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-mobile-navigation-wireframes-2.png)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-responsive-prototype-3.jpg)"> </section>
   <section class="js-slide mobile-table min-h100 white bg-mid-gray">
     <div class="center mobile-table-cell">
       <h1 class="h0">Validation through Research</h1>
@@ -227,6 +272,7 @@
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-planet-signup.png)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-planet-wireframes.png)"> </section>
   <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-planet-flyers.jpg)"> </section>
+  <section class="js-slide min-h100 bg-contain bg-center" style="background-image:url(images/livingsocial-planet-flyers-2.jpg)"> </section>
 
   <footer id="thanks" class="js-slide min-h100 mobile-table bg-light-gray">
     <div class="center mobile-table-cell px0">
@@ -249,6 +295,21 @@
     <a href="#!" class="js-next inline-block">Next</a>
   </nav>
   -->
+
+  <div class="leading-3 fixed b0 r0 l0 oh hover-group">
+    <div class="hover-slide-up bg-darken">
+      <div class="px1 mobile-center">
+        <div class="right mobile-block">
+          <a href="#!" class="js-previous mr1 white">Previous</a>
+          <a href="#!" class="js-next white">Next</a>
+        </div>
+        <a href="#minx" class="js-link mr1 white">Minx</a>
+        <a href="#livingsocial" class="js-link mr1 white">LivingSocial</a>
+        <a href="#livingsocial-planet" class="js-link mr1 white">Planet</a>
+      </div>
+      <div class="js-menu x-scroll px1"></div>
+    </div>
+  </div>
 
 <script src="presentation.js"></script>
 
