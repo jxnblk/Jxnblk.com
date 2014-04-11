@@ -7,8 +7,17 @@
 // - data-img & data-title for menu
 // - setindex when scrolling - almost working
 // - reset index on window resize
+// x - shift space goes up
+// x - url hash
+// - figure out jank in iOS
 
 window.onload = function() {
+
+
+if ('ontouchstart' in document.documentElement) {
+  console.log('is touch');
+  return false;
+};
 
 var bd = document.getElementsByTagName('body')[0],
     links = document.getElementsByClassName('js-link'),
@@ -46,30 +55,37 @@ function removeCurrent(){
   }
 };
 
-function scroll(el) {
+function scroll(el, speed) {
+  console.log('scroll');
   isScrolling = true;
   removeCurrent();
   el.className = el.className + ' current';
+  window.location.hash = index + 1;
   var to = el.offsetTop,
       from = bd.scrollTop,
-      y = to - from;
+      y = to - from,
+      dur = speed || 0.4;
   if(y == 0) {
     isScrolling = false;
     isMoving = false;
     return false;
   };
   bd.style.marginTop = -y + "px";
-  bd.style.transition = 'margin-top .5s ease-in-out';
-  bd.addEventListener('transitionend', function(){
+  bd.style.transition = 'margin-top ' + dur + 's ease-in-out';
+  function reset(){
+    console.log('transition end');
     bd.style.marginTop = 0;
     bd.scrollTop = to;
     bd.style.transition = 'none';
     isScrolling = false;
     isMoving = false;
-  });
+    bd.removeEventListener('transitionend', reset);
+  };
+  bd.addEventListener('transitionend', reset);
 };
 
 function setIndex(el) {
+  console.log('setIndex');
   for (var i=0;i<slides.length;i++){
     if (slides[i] == el) {
       index = i;
@@ -105,16 +121,19 @@ function previous() {
 };
 
 function updateIndex(){
-  if (isScrolling || isMoving) return false;
-  isMoving = true;
   var ypos = bd.scrollTop;
+  if (isScrolling || isMoving) return false;
+  if (ypos == slides[index].offsetTop) return false;
+  isMoving = true;
   // Assumes all slides are same height
   var slideHeight = slides[0].offsetHeight;
   for (var i=0;i<slides.length;i++){
     var slidey = slides[i].offsetTop;
     if(Math.abs(slidey - ypos) < slideHeight/2) {
       index = i;
-      scroll(slides[index]);
+      var speed = Math.abs((slidey - ypos) / slideHeight / 2);
+      console.log('updateIndex');
+      scroll(slides[index], speed);
     }
   };
 };
@@ -136,25 +155,38 @@ function debounce(func, threshold, execAsap) {
   };
 };
 
-window.onscroll = debounce(updateIndex, 200);
+window.onscroll = debounce(updateIndex, 300);
+window.onresize = debounce(function(){
+  if (isScrolling || isMoving) return false;
+  isScrolling = true;
+  bd.scrollTop = slides[index].offsetTop;
+  isScrolling = false;
+},50);
 
 document.onkeydown=function(e) {
-  if (e.which == 40 || e.which == 32 || e.which == 74) {
+  if (e.which == 38 && !e.shiftKey || e.which == 75 || e.shiftKey && e.which == 32) {
+    // up, k
+    e.preventDefault();
+    debounce(previous(),200);
+  } else if (e.which == 40 || e.which == 32 || e.which == 74) {
     // down, space, j
     e.preventDefault();
-    debounce(next(),500);
+    debounce(next(),200);
   } else if (e.shiftKey && e.which == 38) {
     // shift + up
     scroll(slides[0]);
-  } else if (e.which == 38 && !e.shiftKey || e.which == 75) {
-    // up, k
-    e.preventDefault();
-    debounce(previous(),500);
-  } else if (e.which == 16){
   }
 };
 
 if (nextButton) nextButton.onclick = next;
 if (previousButton) previousButton.onclick = previous;
+
+// Move to slide if hash on page load
+if (window.location.hash) {
+  console.log('getting hash');
+  index = parseInt(window.location.hash.slice(1)) - 1;
+  if (isNaN(index)) return false;
+  bd.scrollTop = slides[index].offsetTop;
+};
 
 };
