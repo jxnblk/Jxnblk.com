@@ -123,20 +123,21 @@ function previous() {
 };
 
 function updateIndex(){
-  var ypos = bd.scrollTop;
+  var scrollPosition = bd.scrollTop;
   if (isScrolling || isMoving) return false;
-  if (ypos == slides[index].offsetTop) return false;
+  if (scrollPosition == slides[index].offsetTop) return false;
   isMoving = true;
-  // Assumes all slides are same height
-  var slideHeight = slides[0].offsetHeight;
   for (var i=0;i<slides.length;i++){
-    var slidey = slides[i].offsetTop;
-    if(Math.abs(slidey - ypos) < slideHeight/2) {
+    var slidePosition = slides[i].offsetTop;
+    var slideHeight = slides[i].offsetHeight;
+    if(Math.abs(slidePosition - scrollPosition) < slideHeight/2) {
       index = i;
-      var speed = Math.abs((slidey - ypos) / slideHeight / 2);
+      console.log('scroll to ' + i);
+      var speed = Math.abs((slidePosition - scrollPosition) / slideHeight / 2);
       scroll(slides[index], speed);
     }
   };
+  isMoving = false;
 };
 
 function debounce(func, threshold, execAsap) {
