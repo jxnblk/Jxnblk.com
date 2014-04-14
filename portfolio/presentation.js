@@ -6,10 +6,11 @@
 // - menu
 // - data-img & data-title for menu
 // - setindex when scrolling - almost working
-// - reset index on window resize
+// x - reset index on window resize
 // x - shift space goes up
 // x - url hash
 // - figure out jank in iOS
+// - fix back button hijacking shit
 
 window.onload = function() {
 
@@ -56,7 +57,6 @@ function removeCurrent(){
 };
 
 function scroll(el, speed) {
-  console.log('scroll');
   isScrolling = true;
   removeCurrent();
   el.className = el.className + ' current';
@@ -70,13 +70,16 @@ function scroll(el, speed) {
     isMoving = false;
     return false;
   };
-  bd.style.marginTop = -y + "px";
-  bd.style.transition = 'margin-top ' + dur + 's ease-in-out';
+  bd.style.webkitTransform = 'translateY(' + -y + 'px)';
+  bd.style.transform = 'translateY(' + -y + 'px)';
+  bd.style.webkitTransition = '-webkit-transform ' + dur + 's ease-in-out';
+  bd.style.transition = 'transform ' + dur + 's ease-in-out';
   function reset(){
-    console.log('transition end');
-    bd.style.marginTop = 0;
-    bd.scrollTop = to;
+    bd.style.webkitTransform = 'none';
+    bd.style.transform = 'none';
+    bd.style.webkitTransition = 'none';
     bd.style.transition = 'none';
+    bd.scrollTop = to;
     isScrolling = false;
     isMoving = false;
     bd.removeEventListener('transitionend', reset);
@@ -85,7 +88,6 @@ function scroll(el, speed) {
 };
 
 function setIndex(el) {
-  console.log('setIndex');
   for (var i=0;i<slides.length;i++){
     if (slides[i] == el) {
       index = i;
@@ -132,7 +134,6 @@ function updateIndex(){
     if(Math.abs(slidey - ypos) < slideHeight/2) {
       index = i;
       var speed = Math.abs((slidey - ypos) / slideHeight / 2);
-      console.log('updateIndex');
       scroll(slides[index], speed);
     }
   };
@@ -183,7 +184,6 @@ if (previousButton) previousButton.onclick = previous;
 
 // Move to slide if hash on page load
 if (window.location.hash) {
-  console.log('getting hash');
   index = parseInt(window.location.hash.slice(1)) - 1;
   if (isNaN(index)) return false;
   bd.scrollTop = slides[index].offsetTop;
