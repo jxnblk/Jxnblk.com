@@ -2,9 +2,7 @@
 
 $max-width: 72rem;
 
-//$gutter: 1.5rem;
-//$gutter: 2rem;
-$gutter: 3rem;
+$gutter: 2rem;
 
 $bp1: 40em;
 
@@ -20,8 +18,8 @@ $bp1: 40em;
   margin-right: -$gutter/2;
 }
 
-.grid,
-.mobile-grid,
+.col,
+.mobile-col,
 .table-cell,
 .mobile-table-cell {
   box-sizing: border-box;
@@ -30,12 +28,12 @@ $bp1: 40em;
 }
 
 // Mobile grid
-.mobile-grid {
+.mobile-col {
   float: left;
 }
 
 @for $i from 1 through 11 {
-  .mobile-grid-#{$i} {
+  .mobile-col-#{$i} {
     width: percentage($i/12);
   }
 }
@@ -69,18 +67,18 @@ $bp1: 40em;
     display: table-cell;
     vertical-align: middle;
   }
-  .grid {
+  .col {
     float: left;
   }
   @for $i from 1 through 11 {
-    .grid-#{$i} {
+    .col-#{$i} {
       width: percentage($i/12);
     }
     @if ($i < 4) {
-      .grid-pre-#{$i} {
+      .col-pre-#{$i} {
         margin-left: percentage($i/12);
       }
-      .grid-post-#{$i} {
+      .col-post-#{$i} {
         margin-right: percentage($i/12);
       }
     }
@@ -90,12 +88,12 @@ $bp1: 40em;
     margin-right: auto;
     margin-left: auto;
   }
-  .measure-grid-6 {
+  .measure-col-6 {
     max-width: (6/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;
   }
-  .measure-grid-10 {
+  .measure-col-10 {
     max-width: (10/12 * ($max-width + $gutter)) - $gutter;
     margin-right: auto;
     margin-left: auto;

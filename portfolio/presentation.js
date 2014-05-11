@@ -23,6 +23,9 @@ if ('ontouchstart' in document.documentElement) {
 var bd = document.getElementsByTagName('body')[0],
     links = document.getElementsByClassName('js-link'),
     slides = document.getElementsByClassName('js-slide'),
+    //images = document.getElementsByTagName('img'),
+    //threshold = 1024,
+    //loaded,
     menu = document.getElementsByClassName('js-menu')[0];
     nextButton = document.getElementsByClassName('js-next')[0],
     previousButton = document.getElementsByClassName('js-previous')[0],
@@ -122,6 +125,26 @@ function previous() {
   scroll(slides[index]);
 };
 
+//function loadImages(scrollPosition){
+//  for (var i=0;i<images.length;i++) {
+//    var imagePosition = images[i].offsetTop;
+//    if (!images[i].getAttribute('data-src')) {
+//      console.log('no data-src for ' + i);
+//      return false;
+//    } else if (imagePosition < scrollPosition + threshold) {
+//      var src = images[i].getAttribute('data-src');
+//      console.log('load up the image - ' + src);
+//      images[i].src = src;
+//      loaded.push(images[i]);
+//      console.log(loaded);
+//      // maybe use js filter() method to remove
+//      // jquery method:
+//      //images = images.not(loaded);
+//    };
+//  };
+//};
+//loadImages(bd.scrollTop);
+
 function updateIndex(){
   var scrollPosition = bd.scrollTop;
   if (isScrolling || isMoving) return false;
@@ -138,6 +161,7 @@ function updateIndex(){
     }
   };
   isMoving = false;
+  //loadImages(scrollPosition);
 };
 
 function debounce(func, threshold, execAsap) {
