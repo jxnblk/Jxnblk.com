@@ -70,7 +70,7 @@ $bp1: 40em;
   .col {
     float: left;
   }
-  @for $i from 1 through 11 {
+  @for $i from 1 through 12 {
     .col-#{$i} {
       width: percentage($i/12);
     }
