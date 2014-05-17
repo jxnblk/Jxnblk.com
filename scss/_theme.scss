@@ -1,7 +1,12 @@
 // Jxnblk Style Guide Theme 
 
 
-$blue: #0096cc;
+// New colors
+//#0cf & #057
+
+//$blue: #0096cc;
+$blue: #00ccff;
+$dark-blue: #005577;
 $light-gray: #eaeff0;
 $mid-gray: #708690;
 $dark-gray: #405660;
@@ -12,6 +17,7 @@ $green: #0f6;
 
 .white { color: #fff; }
 .blue { color: $blue; }
+.dark-blue { color: $dark-blue; }
 .light-gray { color: $light-gray; }
 .mid-gray { color: $mid-gray; }
 .dark-gray { color: $dark-gray; }
@@ -21,6 +27,7 @@ $green: #0f6;
 
 .bg-white { background-color: #fff; }
 .bg-blue { background-color: $blue; }
+.bg-dark-blue { background-color: $dark-blue; }
 .bg-light-gray { background-color: $light-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
 .bg-dark-gray { background-color: $dark-gray; }

@@ -8,24 +8,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="http://jxnblk.com/favicon.png">
   <link rel="apple-touch-icon-precomposed" href="http://jxnblk.com/apple-touch-icon.png"> 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather:400,700" rel="stylesheet">
   <link href="scss/style.css" rel="stylesheet">
   <style>
-    /*
-    body { font-family: 'Avenir Next'; }
-    */
-    .vignette {
-      box-shadow: inset 0 0 6rem rgba(0,0,0,.1);
-    }
+    .icon { width: 1em; height: 1em; vertical-align: -0.125em; }
   </style>
   <!-- inline styles -->
 </head>
 <body>
 
-  <!--
-    #0cf & #057
-  -->
-  <header class="p2 white xbg-light-gray " style="background-color:#0cf">
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="display: none">
+    <defs>
+      <g id="chevron-right">
+        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"/>
+      </g>
+    </defs>
+  </svg>
+
+  <header class="px1 py2 white xbg-light-gray " style="background-color:#0cf">
     <div class="container">
       <div class="table row">
         <div class="center table-cell col-4 py2">
@@ -37,186 +37,158 @@
         <div class="table-cell col-7 py2">
           <h1 class="h2 mb0">Brent Jackson</h1>
           <p class="h2 mb0">Designer & proponent of simplicity</p>
+          <!--
           <nav class="bold leading-3">
             <a href="#!" class="mr1 white">Projects</a>
             <a href="#!" class="mr1 white">Writing</a>
             <a href="/work" class="white">Work</a>
           </nav>
+          -->
         </div>
       </div>
     </div>
   </header>
 
-  <!--
-  <section>
-          <div class="py2">
-            <a href="//basscss.com" class="block mb1">
-              <span class="h2 bold block">BASSCSS</span>
-              <span>Next-level CSS toolkit</span>
-            </a>
-            <a href="//jxnblk.github.io/geomicons-open" class="block mb1">
-              <span class="h2 bold block">Geomicons Open</span>
-              <span>Open source icons for the Web</span>
-            </a>
-            <a href="//jxnblk.github.io/plangular" class="block">
-              <span class="h2 bold block">Plangular</span>
-              <span>Create custom SoundCloud players with HTML & CSS</span>
-            </a>
-          </div>
-  </section>
-  -->
-
-  <section id="projects" class="px2 py4 xbg-light-gray">
+  <section id="highlights" class="px1 py4 xbg-light-gray">
     <div class="container">
-      <h1 class="h3 inline-block mb1 mr1 ">Projects</h1>
-      <div class="row py2">
-        <div class="col col-4">
-          <h2 class="h2 mb0"><a href="//basscss.com" class="block dark-gray">BASSCSS</a></h2>
-          <p>Next-level CSS toolkit</p>
+      <div class="table row py2">
+        <div class="table-cell col-8">
+          <h2 class="h1 mb0"><a href="//basscss.com" class="dark-gray">BASSCSS</a></h2>
+          <p class="h2 mb0">Next-level CSS toolkit</p>
+          <p class="mb0">A lightweight collection of base styles and simple type and layout utilities designed for speed, performance, and scalability. Use it out of the box for simple sites and prototypes or as the base for a larger SASS project.</p>
         </div>
-        <div class="col col-4">
-          <h2 class="h2 mb0"><a href="//jxnblk.github.io/geomicons-open" class="block dark-gray">Geomicons Open</a></h2>
-          <p>Open source icons for the Web</p>
-        </div>
-        <div class="col col-4">
-          <h2 class="h2 mb0"><a href="//jxnblk.github.io/plangular" class="dark-gray">Plangular</a></h2>
-          <p>Create custom SoundCloud players</p>
+        <div class="center table-cell col-4 mobile-hide">
+          <a href="http://basscss.com" class="button button-box-blue">View more</a>
         </div>
       </div>
-      <a href="#!" class="button button-box-blue">More Projects</a>
+      <div class="row">
+        <div class="col col-6 py1">
+          <h2 class="h1 mb0"><a href="//jxnblk.github.io/geomicons-open" class="dark-gray">Geomicons Open</a></h2>
+          <p class="h3 mb0">Open source icons for the Web</p>
+        </div>
+        <div class="col col-6 py1">
+          <h2 class="h1 mb0"><a href="//jxnblk.github.io/plangular" class="dark-gray">Plangular</a></h2>
+          <p class="h3 mb0">Create custom SoundCloud players</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="writing" class="container p2">
+  <section id="writing" class="container px1 py4">
     <div class="measure">
-      <h1 class="h3 inline-block mb1 mr1 mid-gray">Writing</h1>
-      <div class="mb2">
+      <h1 class="h4 inline-block mb1 mr1 mid-gray">Writing</h1>
+      <div class="mb4">
         <h2><a href="https://medium.com/p/e95e79f409b7" class="dark-gray">It's Okay to Look the Same</a></h2>
-        <p class="mb0">Teaser text</p>
-        <a href="#!">Read more</a>
+        <h3>Why frameworks are actually pretty great</h3>
+        <p class="serif mb0">Every once in a while I hear someone complain about the visual homogenization of the web, and front-end frameworks often get the brunt of the attack. This visual sameness isn’t necessarily a bad thing.</p>
+        <p><a href="https://medium.com/p/e95e79f409b7">Read more</a></p>
       </div>
-      <div class="mb2">
+      <div class="mb4">
         <h2><a href="https://medium.com/p/bd413d2bc4f3" class="dark-gray">Designing in the Browser Faster</a></h2>
-        <p class="mb0">Teaser text</p>
-        <a href="#!">Read more</a>
+        <p class="serif mb0">I’ve been dabbling with HTML and CSS for years—building small websites for myself and friends and building prototypes to test designs. And, while I’ve been fascinated with the idea of designing in the browser for a long time, it wasn’t until recently that it’s become much, much faster for me than using traditional design software.</p>
+        <p><a href="https://medium.com/p/bd413d2bc4f3">Read more</a></p>
       </div>
-      <div class="mb2">
-        <h2><a href="//jxnblk.tumblr.com/post/40693165132/organizing-mobile-navigation-based-on" class="dark-gray">
+      <div class="mb4">
+        <h2><a href="http://jxnblk.tumblr.com/post/40693165132/organizing-mobile-navigation-based-on" class="dark-gray">
           Organizing Mobile Navigation Based on Information-Seeking Behavior
         </a></h2>
-        <p class="mb0">Teaser text</p>
-        <a href="#!">Read more</a>
+        <p class="serif mb0">When opening an application, a user should be able to understand its functionality, see relevant content, and get to where they want to go. Applications that obscure navigation with the intent of focusing on content can make finding specific information difficult. On the other hand, skewing towards too much navigation can overwhelm the user. Mobile apps should balance navigation for users with different information needs.</p>
+        <p><a href="http://jxnblk.tumblr.com/post/40693165132/organizing-mobile-navigation-based-on">Read more</a></p>
       </div>
-      <a href="#!" class="button button-box-blue">More Writing</a>
       <!--
-      <a href="https://hackdesign.org/lessons/24"
-        class="h3 bold block mb2 dark-gray">
-        Hack Design: Using Icons in Interfaces
-      </a>
-      -->
-      <!--
-      <a href="http://jxnblk.tumblr.com/post/82486816704/an-update-on-the-hamburger-menu"
-        class="h3 bold block mb2 dark-gray">
-          An Update on the Hamburger Menu
-      </a>
-      <a href="//jxnblk.tumblr.com/post/36218805036/hamburgers-basements-why-not-to-use-left-nav-flyouts"
-        class="h3 bold block mb2 dark-gray">
-          Hamburgers & Basements: Why Not to Use Left Nav Flyouts
-      </a>
-      <a href="//jxnblk.tumblr.com/post/41796724549/im-sick-of-your-tiny-tiny-type"
-        class="h3 bold block mb2 dark-gray">
-          I'm Sick of Your Tiny, Tiny Type
-      </a>
-      <a href="http://jxnblk.tumblr.com/post/36972301487/the-advantages-of-table-views-over-left-nav-flyouts"
-        class="h3 bold block mb2 dark-gray">
-          The Advantages of Table Views Over Left Nav Flyouts
-      </a>
-      <a href="//jxnblk.tumblr.com/post/37416765650/buckets-jumpoffs-using-content-centric-contextual"
-        class="h3 bold block mb2 dark-gray">
-          Buckets & Jumpoffs: Using Content-Centric Contextual Navigation
-      </a>
+      <p class="center">
+        <a href="writing" class="button button-box-blue">More Writing</a>
+      </p>
       -->
     </div>
   </section>
       
+  <section id="projects" class="container px1 py4">
+    <h1 class="h4 mb1 mid-gray">Projects</h1>
+    <div class="row">
+      <div class="col col-3">
+        <a href="//jxnblk.com/ashley" class="block mb1 dark-gray">
+          <span class="h2 bold block">Ashley</span>
+          <span class="p">Readable Tumblr Theme</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/Heather" class="block mb1 dark-gray">
+          <span class="h2 bold block">Heather</span>
+          <span class="p">Hyperminimal Jekyll Theme</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/loading" class="block mb1 dark-gray">
+          <span class="h2 bold block">Loading</span>
+          <span class="p">This Could Take a While</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/principles" class="block mb1 dark-gray">
+          <span class="h2 bold block">Principles</span>
+          <span class="p">Principles of Good Web Design</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/Twipster" class="block mb1 dark-gray">
+          <span class="h2 bold block">Twipster</span>
+          <span class="p">Simpler, Readabler Twitter</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//soundrad.com" class="block mb1 dark-gray">
+          <span class="h2 bold block">SoundRad</span>
+          <span class="p">A Faster SoundCloud Player</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/tempo" class="block mb1 dark-gray">
+          <span class="h2 bold block">Tempo</span>
+          <span class="p">Responsive Grid System</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/table-object" class="block mb1 dark-gray">
+          <span class="h2 bold block">Table Object</span>
+          <span class="p">For Vertically Centering Elements</span>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-3">
+        <a href="//microbeats.cc" class="block mb1 dark-gray">
+          <span class="h2 bold block">Microbeats</span>
+          <span class="p">Beats Created in Under an Hour</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//mrsjxn.com" class="block mb1 dark-gray">
+          <span class="h2 bold block">MrsJxn</span>
+          <span class="p">Post-future Beats</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/gifolio" class="block mb1 dark-gray">
+          <span class="h2 bold block">Gifolio</span>
+          <span class="p">GIF Portfolio</span>
+        </a>
+      </div>
+      <div class="col col-3">
+        <a href="//jxnblk.github.io/skullcat" class="block mb1 dark-gray">
+          <span class="h2 bold block">Skullcat</span>
+          <span class="p">A Avatar fur Mrmrs</span>
+        </a>
+      </div>
+    </div>
     <!--
-    <section id="blog-themes" class="py2">
-      <h1 class="f5 caps regular mb1 mid-gray">Blog Themes</h1>
-      <div class="clearfix">
-        <div class="grid grid-6">
-          <a href="//jxnblk.com/ashley" class="block mb1 dark-gray">
-            <span class="h2 bold block">Ashley</span>
-            <span class="p">Readable & Responsive Tumblr Theme</span>
-          </a>
-        </div>
-        <div class="grid grid-6">
-          <a href="//jxnblk.github.io/Heather" class="block mb1 dark-gray">
-            <span class="h2 bold block">Heather</span>
-            <span class="p">Hyperminimal Jekyll Theme</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    Add loading
-
-    <section id="minimalism" class="py2">
-      <h1 class="f5 caps regular mb1 mid-gray">Experiments in Minimalism</h1>
-      <div class="clearfix">
-        <div class="grid grid-6">
-          <a href="//jxnblk.github.io/Twipster" class="block mb1 dark-gray">
-            <span class="h2 bold block">Twipster</span>
-            <span class="p">Simpler, Readabler Twitter</span>
-          </a>
-        </div>
-        <div class="grid grid-6">
-          <a href="//soundrad.com" class="block mb1 dark-gray">
-            <span class="h2 bold block">SoundRad</span>
-            <span class="p">Radically Simpler & Faster SoundCloud Player</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="music" class="py2">
-      <h1 class="f5 caps regular mb1 mid-gray">Music</h1>
-      <div class="clearfix">
-        <div class="grid grid-6">
-          <a href="//microbeats.cc" class="block mb1 dark-gray">
-            <span class="h2 bold block">Microbeats</span>
-            <span class="p">Beats Created in Under an Hour</span>
-          </a>
-        </div>
-        <div class="grid grid-6">
-          <a href="//mrsjxn.com" class="block mb1 dark-gray">
-            <span class="h2 bold block">MrsJxn</span>
-            <span class="p">Post-future Beats</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section id="fun" class="py2">
-      <h1 class="f5 caps regular mb1 mid-gray">Just for Fun</h1>
-      <div class="clearfix">
-        <div class="grid grid-6">
-          <a href="//jxnblk.github.io/gifolio" class="block mb1 dark-gray">
-            <span class="h2 bold block">Gifolio</span>
-            <span class="p">GIF Portfolio</span>
-          </a>
-        </div>
-        <div class="grid grid-6">
-          <a href="//jxnblk.github.io/skullcat" class="block mb1 dark-gray">
-            <span class="h2 bold block">Skullcat</span>
-            <span class="p">A avatar fur Mrmrs</span>
-          </a>
-        </div>
-      </div>
-    </section>
+      Reading list
     -->
-     
+  </section>
 
-  <footer id="links" class="container px2 py1">
+  <footer id="links" class="container px2 py2">
     <div class="f5 leading-3">
       <a class="mr1 mobile-block dark-gray" href="//twitter.com/jxnblk">Twitter</a>
       <a class="mr1 mobile-block dark-gray" href="//github.com/jxnblk">GitHub</a>
