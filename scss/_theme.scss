@@ -7,7 +7,8 @@
 //$blue: #0096cc;
 $blue: #00ccff;
 $dark-blue: #005577;
-$light-gray: #eaeff0;
+//$light-gray: #eaeff0;
+$light-gray: #dadfe0;
 $mid-gray: #708690;
 $dark-gray: #405660;
 
@@ -159,14 +160,14 @@ a {
 .rounded { border-radius: .25rem; }
 //.transition-all { transition: all .2s ease; }
 
+.border { border: 1px solid $light-gray; }
+
 .bg-grid {
   background-image: linear-gradient(transparent, transparent .5rem, $light-gray .5rem);
   background-size: .5rem .5rem;
 }
 
-.outline {
-  box-shadow: 0 0 0 1px $light-gray;
-}
+.outline { box-shadow: 0 0 0 1px $light-gray; }
 
 //* { outline: 1px solid rgba($blue,.5); }
 
